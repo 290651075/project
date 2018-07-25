@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lx.dao.RecruitmentMapper">
+    <resultMap id="recruitmentMap" type="recruitment">
+        <id property="id" column="R_ID"></id>
+        <result property="position" column="R_POSITION"></result>
+        <result property="department" column="R_DEPARTMENT"/>
+        <result property="introduction" column="R_INTRODUCTION"></result>
+        <result property="salary" column="R_SALARY"></result>
+        <result property="state" column="R_STATE"></result>
+    </resultMap>
+    <select id="getRecruitmentByState" resultMap="recruitmentMap">
+        SELECT * FROM R_RECRUITMENT WHERE R_STATE=#{1}
+    </select>
+    <select id="getRecruitmentByStateAndPage" resultMap="recruitmentMap">
+        SELECT R_ID,R_POSITION,R_DEPARTMENT,R_INTRODUCTION,R_SALARY,R_DATE,R_STATE,R_PID FROM (SELECT rownum rn ,r.* FROM R_RECRUITMENT r WHERE
+       R_STATE=#{0})a where rn between #{1} and #{2}
+    </select>
+
+
+</mapper>
