@@ -17,8 +17,8 @@ public class RecruitmentServiceImpl implements RecruitmentService {
     private RecruitmentMapper recruitmentMapper;
 
     @Override
-    public List<Recruitment> getRecruitmentByState() {
-        return recruitmentMapper.getRecruitmentByState();
+    public List<Recruitment> getRecruitmentByState(int state) {
+        return recruitmentMapper.getRecruitmentByState(state);
     }
 
     @Override

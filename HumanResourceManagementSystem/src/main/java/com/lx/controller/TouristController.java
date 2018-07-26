@@ -1,12 +1,19 @@
 package com.lx.controller;
 
+
+import com.lx.model.Recruitment;
 import com.lx.model.Tourist;
+
+import com.lx.service.RecruitmentService;
 import com.lx.service.TouristService;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
+import java.util.List;
+
 
 /**
  * Created by Administrator on 2018/7/25.
@@ -23,10 +30,10 @@ public class TouristController {
         System.out.println("********");*/
         System.out.println(tourist1);
         if (null!=tourist1){
-            session.setAttribute("t",tourist1);
+            session.setAttribute("tourist",tourist1);
             return "success";
         }
-        return "../../index";
+        return "/login.jsp";
     }
     //用于跳转到注册界面
     @RequestMapping("/register1")
@@ -34,10 +41,10 @@ public class TouristController {
         return "register";
     }
     //游客注册
-    @RequestMapping("register")
+    @RequestMapping("/register")
     public String register(Tourist tourist,HttpSession session){
         touristService.addTourist(tourist);
-        session.setAttribute("t",tourist);
-        return "../../index";
+        session.setAttribute("tourist",tourist);
+        return "/login.jsp";
     }
 }

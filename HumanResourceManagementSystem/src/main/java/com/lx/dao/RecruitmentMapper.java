@@ -9,7 +9,7 @@ import java.util.List;
  */
 public interface RecruitmentMapper {
     //获取所有发布的招聘信息
-    List<Recruitment> getRecruitmentByState();
+    List<Recruitment> getRecruitmentByState(int state);
     //对招聘信息分页
     List<Recruitment> getRecruitmentByStateAndPage(int state,int begin,int end);
 }

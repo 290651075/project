@@ -41,4 +41,9 @@ public class ResumeServiceImpl implements ResumeService {
     public Resume getResumeById(Resume resume) {
         return resumeMapper.getResumeById(resume);
     }
+
+    @Override
+    public List<Resume> getResumeByTIdAndPage(Tourist tourist, int begin, int end) {
+        return resumeMapper.getResumeByTIdAndPage(tourist,begin,end);
+    }
 }

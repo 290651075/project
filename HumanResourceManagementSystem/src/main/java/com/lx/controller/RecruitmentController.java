@@ -18,19 +18,19 @@ public class RecruitmentController {
     @Resource
     private RecruitmentService recruitmentService;
     //显示招聘信息(分页）
-    @RequestMapping("/")
+    @RequestMapping("/ ")
     public String getRecruitmentInfo(@RequestParam(value = "currentPage",defaultValue = "1")int currentPage, HttpSession session){
         int state=1;
-        System.out.println("*********************");
-        List<Recruitment> recruitments=recruitmentService.getRecruitmentByState();
+ /*       System.out.println("*********************");*/
+        List<Recruitment> recruitments=recruitmentService.getRecruitmentByState(state);
         int totalNum=recruitments.size();
-        int pageSize=5;
+        int pageSize=1;
         int totalPages=totalNum%pageSize==0?totalNum/pageSize:totalNum/pageSize+1;
         int begin = (currentPage-1)*pageSize+1;
         int end = (currentPage-1)*pageSize+pageSize;
         List<Recruitment> recruitments1=recruitmentService.getRecruitmentByStateAndPage(state,begin,end);
         session.setAttribute("recruitments",recruitments1);
         session.setAttribute("totalPages",totalPages);
-        return "../../index";
+        return "../../login";
     }
 }

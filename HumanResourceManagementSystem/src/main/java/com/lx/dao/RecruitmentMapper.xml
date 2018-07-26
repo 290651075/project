@@ -10,7 +10,7 @@
         <result property="state" column="R_STATE"></result>
     </resultMap>
     <select id="getRecruitmentByState" resultMap="recruitmentMap">
-        SELECT * FROM R_RECRUITMENT WHERE R_STATE=#{1}
+        SELECT * FROM R_RECRUITMENT WHERE R_STATE=#{state}
     </select>
     <select id="getRecruitmentByStateAndPage" resultMap="recruitmentMap">
         SELECT R_ID,R_POSITION,R_DEPARTMENT,R_INTRODUCTION,R_SALARY,R_DATE,R_STATE,R_PID FROM (SELECT rownum rn ,r.* FROM R_RECRUITMENT r WHERE

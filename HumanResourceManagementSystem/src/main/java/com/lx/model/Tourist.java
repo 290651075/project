@@ -23,6 +23,10 @@ public class Tourist implements Serializable {
         this.pass = pass;
     }
 
+    public Tourist(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }

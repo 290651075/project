@@ -26,7 +26,7 @@
     <input type="submit" value="注册">
 </form>
 <%
-    List<Recruitment> recruitments= (List<Recruitment>) session.getAttribute("recruitment");
+    List<Recruitment> recruitments= (List<Recruitment>) session.getAttribute("recruitments");
     int totalPages= (int) session.getAttribute("totalPages");
 
 %>

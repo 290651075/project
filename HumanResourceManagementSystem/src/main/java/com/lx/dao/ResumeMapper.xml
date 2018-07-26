@@ -23,6 +23,10 @@
     <select id="getResumeById" resultMap="resumeMapper">
         SELECT * FROM  R_RESUME WHERE R_ID=#{id}
     </select>
+    <select id="getResumeByTIdAndPage" resultMap="resumeMapper">
+        SELECT R_ID, R_NAME, R_SEX, R_BIRTH, R_SCHOOL, R_RNAME, R_NATION, R_GRADUATIONTIME, R_WORKEXP, R_BIRTHPLACE,
+        R_EVALUATE, R_IDCARD, R_PHONE, R_EMAIL FROM (SELECT rownum rn ,r.* from R_RESUME r WHERE R_TID=#{0})a where rn between #{1} and #{2}
+    </select>
     <insert id="addResume">
         INSERT INTO R_RESUME (R_ID, R_NAME, R_SEX, R_BIRTH, R_SCHOOL, R_RNAME, R_NATION, R_GRADUATIONTIME, R_WORKEXP, R_BIRTHPLACE,
         R_EVALUATE, R_IDCARD, R_PHONE, R_EMAIL) VALUES (R_RESUME_SEQ.nextval,#{name},#{sex},#{birth},#{school},#{rname},#{nation},#{graduationTime},#{workEXP},
