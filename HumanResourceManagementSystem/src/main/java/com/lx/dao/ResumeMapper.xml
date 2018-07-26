@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.lx.dao.ResumeMapper">
-    <insert id="addResume"></insert>
-    <update id="updateResume"></update>
-    <delete id="deleteResume"></delete>
-    <select id="getResume" resultType="com.lx.model.Resume"></select>
-    <select id="getResumeById" resultType="com.lx.model.Resume"></select>
+    <resultMap id="resumeMapper" type="resume">
+        <id property="id" column="R_ID"></id>
+        <result property="name" column="R_NAME"></result>
+        <result property="sex" column="R_SEX"></result>
+        <result property="birth" column="R_BIRTH"></result>
+        <result property="school" column="R_SCHOOL"></result>
+        <result property="rname" column="R_RNAME"></result>
+        <result property="nation" column="R_NATION"></result>
+        <result property="graduationTime" column="R_GRADUATIONTIME"></result>
+        <result property="workEXP" column="R_WORKEXP"></result>
+        <result property="birthPlace" column="R_BIRTHPLACE"></result>
+        <result property="evaluate" column="R_EVALUATE"></result>
+        <result property="idCard" column="R_IDCARD"></result>
+        <result property="phone" column="R_PHONE"></result>
+        <result property="email" column="R_EMAIL"></result>
+    </resultMap>
+    <select id="getResume" resultMap="resumeMapper">
+        SELECT *FROM R_RESUME WHERE R_TID=#{id}
+    </select>
+    <select id="getResumeById" resultMap="resumeMapper">
+        SELECT * FROM  R_RESUME WHERE R_ID=#{id}
+    </select>
+    <insert id="addResume">
+        INSERT INTO R_RESUME (R_ID, R_NAME, R_SEX, R_BIRTH, R_SCHOOL, R_RNAME, R_NATION, R_GRADUATIONTIME, R_WORKEXP, R_BIRTHPLACE,
+        R_EVALUATE, R_IDCARD, R_PHONE, R_EMAIL) VALUES (R_RESUME_SEQ.nextval,#{name},#{sex},#{birth},#{school},#{rname},#{nation},#{graduationTime},#{workEXP},
+        #{birthPlace},#{evaluate},#{idCard},#{phone},#{email})
+    </insert>
+    <update id="updateResume">
+        UPDATE R_RESUME SET R_NAME=#{name}, R_SEX=#{sex}, R_BIRTH=#{birth}, R_SCHOOL=#{school}, R_RNAME=#{rname}, R_NATION=#{nation}, R_GRADUATIONTIME=#{graduationTime},
+         R_WORKEXP=#{workEXP}, R_BIRTHPLACE=#{birthPlace},R_EVALUATE=#{evaluate}, R_IDCARD=#{idCard}, R_PHONE=#{phone}, R_EMAIL=#{email}
+    </update>
+    <delete id="deleteResume">
+        DELETE FROM R_RESUME WHERE R_ID=#{id}
+    </delete>
+
 </mapper>

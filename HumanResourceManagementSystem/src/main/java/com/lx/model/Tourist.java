@@ -7,12 +7,13 @@ import java.io.Serializable;
  *
  * 游客表
  *
+ * 游客
  */
 public class Tourist implements Serializable {
     private int id ;
     private String name;
     private String pass;
-    private int state;
+    private int state;//好像不用状态
 
     public Tourist() {
     }

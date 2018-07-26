@@ -17,10 +17,11 @@ import java.util.List;
 public class RecruitmentController {
     @Resource
     private RecruitmentService recruitmentService;
-    //显示招聘信息
+    //显示招聘信息(分页）
     @RequestMapping("/")
     public String getRecruitmentInfo(@RequestParam(value = "currentPage",defaultValue = "1")int currentPage, HttpSession session){
         int state=1;
+        System.out.println("*********************");
         List<Recruitment> recruitments=recruitmentService.getRecruitmentByState();
         int totalNum=recruitments.size();
         int pageSize=5;

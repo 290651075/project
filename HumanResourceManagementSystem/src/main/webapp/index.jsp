@@ -17,13 +17,21 @@
     <title></title>
 </head>
 <body>
+<form action="login" method="post">
+    账号：<input name="name"><br/>
+    密码：<input name="pass"><br/>
+    <input type="submit" value="登陆">
+</form>
+<form action="register1" method="post">
+    <input type="submit" value="注册">
+</form>
 <%
     List<Recruitment> recruitments= (List<Recruitment>) session.getAttribute("recruitment");
     int totalPages= (int) session.getAttribute("totalPages");
 
 %>
 <h1>招聘信息</h1>
-<table>
+<table >
     <tr>
         <th>职位</th>
         <th>部门</th>
@@ -55,20 +63,13 @@
 <%
     for(int i=1;i<=totalPages;i++){
 %>
-<a href="/?currentPage=<%=i%>">&nbsp;<%=i%>&nbsp;</a>
+<a href="?currentPage=<%=i%>">&nbsp;<%=i%>&nbsp;</a>
 
 <%
     }
 %>
 
-<form action="login" method="post">
-    账号：<input name="name"><br/>
-    密码：<input name="pass"><br/>
-    <input type="submit" value="登陆">
-</form>
-<form action="register1" method="post">
-    <input type="submit" value="注册">
-</form>
+
 
 </body>
 </html>

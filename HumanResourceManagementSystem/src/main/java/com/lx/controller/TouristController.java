@@ -28,10 +28,12 @@ public class TouristController {
         }
         return "../../index";
     }
+    //用于跳转到注册界面
     @RequestMapping("/register1")
     public String register1(){
         return "register";
     }
+    //游客注册
     @RequestMapping("register")
     public String register(Tourist tourist,HttpSession session){
         touristService.addTourist(tourist);

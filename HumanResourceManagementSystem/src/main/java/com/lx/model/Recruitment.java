@@ -9,6 +9,7 @@ import java.io.Serializable;
  *
  * 招聘表（包含招聘信息和招聘职位的id）
  *
+ * 招聘信息
  */
 public class Recruitment implements Serializable {
     private int id;
