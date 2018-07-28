@@ -14,5 +14,5 @@ public interface ResumeService {
     void deleteResume(Resume resume);
     void updateResume(Resume resume);
     Resume getResumeById(Resume resume);
-    List<Resume> getResumeByTIdAndPage(Tourist tourist,int begin,int end);
+    List<Resume> getResumeByTIdAndPage(int tId,int begin,int end);
 }

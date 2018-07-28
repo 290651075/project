@@ -30,7 +30,7 @@
     <div id="div3">
         <ul>
             <li><a href="lookResume">查看简历</a></li>
-            <li><a href="showGoods?currentPage=1">添加简历</a></li>
+            <li><a href="addResume1">添加简历</a></li>
             <li><a href="showBuyCar?currentPage1=1">修改简历</a></li>
             <li><a href="showOrder?currentPage2=1">查看信箱</a></li>
         </ul>

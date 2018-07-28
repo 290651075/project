@@ -22,10 +22,10 @@
     int totalPages= (int) session.getAttribute("totalPages1");
 
 %>
-<h1>招聘信息</h1>
+<h1>欢迎查看简历</h1>
 <table >
     <tr>
-        <th>职位</th>
+        <th>简历名称</th>
 
     </tr>
     <%
@@ -35,8 +35,9 @@
         <td><%=resumes.get(i).getRname()%></td>
 
         <td>
-            <form action="#">
-                <input type="submit" value="提交简历">
+            <form action="listResumeDetail">
+                <input name="id" type="hidden" value="<%=resumes.get(i).getId()%>">
+                <input type="submit" value="查看">
             </form>
         </td>
     </tr>

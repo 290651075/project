@@ -16,9 +16,7 @@ public class Resume implements Serializable{
     private String name;//真实姓名
     private String sex;//性别
     private String birth;//出生年月
-    private String school;//毕业院校
-    private Tourist tourist;//对应该简历的游客
-    private String rname;//简历名称
+    private String school;//毕业院校\
     private String nation;//民族
     private String graduationTime;//毕业时间
     private String workEXP;//工作经验
@@ -27,9 +25,13 @@ public class Resume implements Serializable{
     private String idCard;//身份证号
     private int phone;//电话号码
     private String email;//邮箱
-
-
+    private String rname;//简历名称
+    private Tourist tourist;//对应该简历的游客
     public Resume() {
+    }
+
+    public Resume(int id) {
+        this.id = id;
     }
 
     public Resume(String name, String sex, String birth, String school, Tourist tourist, String rname, String nation, String graduationTime, String workEXP, String birthPlace, String evaluate, String idCard, int phone, String email) {
@@ -49,7 +51,20 @@ public class Resume implements Serializable{
         this.email = email;
     }
 
-
+    public Resume(String name, String sex, String birth, String school, String nation, String graduationTime, String workEXP, String birthPlace, String evaluate, String idCard, int phone, String email) {
+        this.name = name;
+        this.sex = sex;
+        this.birth = birth;
+        this.school = school;
+        this.nation = nation;
+        this.graduationTime = graduationTime;
+        this.workEXP = workEXP;
+        this.birthPlace = birthPlace;
+        this.evaluate = evaluate;
+        this.idCard = idCard;
+        this.phone = phone;
+        this.email = email;
+    }
 
     public int getId() {
         return id;

@@ -43,7 +43,7 @@ public class ResumeServiceImpl implements ResumeService {
     }
 
     @Override
-    public List<Resume> getResumeByTIdAndPage(Tourist tourist, int begin, int end) {
-        return resumeMapper.getResumeByTIdAndPage(tourist,begin,end);
+    public List<Resume> getResumeByTIdAndPage(int tId, int begin, int end) {
+        return resumeMapper.getResumeByTIdAndPage(tId,begin,end);
     }
 }
