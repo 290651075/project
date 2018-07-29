@@ -9,6 +9,9 @@
         <result property="salary" column="R_SALARY"></result>
         <result property="state" column="R_STATE"></result>
     </resultMap>
+    <insert id="addRecruitment"></insert>
+    <update id="updateRecruitment"></update>
+    <delete id="deleteRecruitment"></delete>
     <select id="getRecruitmentByState" resultMap="recruitmentMap">
         SELECT * FROM R_RECRUITMENT WHERE R_STATE=#{state}
     </select>

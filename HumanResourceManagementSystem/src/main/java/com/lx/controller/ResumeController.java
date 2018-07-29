@@ -49,6 +49,7 @@ public class ResumeController {
     //添加简历
     @RequestMapping("/addResume")
     public String addResume(Resume resume,HttpSession session){
+        System.out.println(resume);
         resumeService.addResume(resume);
         return "success";
     }

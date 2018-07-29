@@ -10,4 +10,7 @@ import java.util.List;
 public interface RecruitmentService {
     List<Recruitment> getRecruitmentByState(int state);
     List<Recruitment> getRecruitmentByStateAndPage(int state,int begin,int end);
+    void addRecruitment(Recruitment recruitment);
+    void deleteRecruitment(Recruitment recruitment);
+    void updateRecruitment(Recruitment recruitment);
 }

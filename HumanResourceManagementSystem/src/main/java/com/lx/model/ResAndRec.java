@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  * Created by Administrator on 2018/7/26.
- * 中间表
+ * 中间表（投递简历）
  * 用于存储投递成功的简历和对应的职位，便于管理员在筛选简历时获得应聘者的简历和投递的职位
  *
  */

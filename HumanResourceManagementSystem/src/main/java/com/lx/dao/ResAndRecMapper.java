@@ -7,6 +7,6 @@ import com.lx.model.Resume;
  * Created by Administrator on 2018/7/26.
  */
 public interface ResAndRecMapper {
-    //
+    //成功投递简历
     void addResAndRec(Recruitment recruitment, Resume resume );
 }

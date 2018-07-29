@@ -3,28 +3,29 @@ package com.lx.model;
 import java.io.Serializable;
 
 /**
- * Created by Administrator on 2018/7/25.
+ * Created by Administrator on 2018/7/29.
  *
- * 游客表
- *
- * 游客
+ *员工表
+ *包括普通员工和管理员（通过state判断）
  */
-public class Tourist implements Serializable {
-    private int id ;
-    private String name;//姓名
-    private String pass;//密码
-    private int state;//好像不用状态
+public class Employee implements Serializable{
+    private int id;
+    private String name;//通过“Employee”+“id”的形式规定登陆账号
+    private String pass;//默认12345
+    private  int state;
 
-    public Tourist() {
+    public Employee() {
     }
 
-    public Tourist(String name, String pass) {
+    public Employee(String name, String pass) {
         this.name = name;
         this.pass = pass;
     }
 
-    public Tourist(int id) {
-        this.id = id;
+    public Employee(String name, String pass, int state) {
+        this.name = name;
+        this.pass = pass;
+        this.state = state;
     }
 
     public int getId() {
@@ -61,7 +62,7 @@ public class Tourist implements Serializable {
 
     @Override
     public String toString() {
-        return "Tourist{" +
+        return "Employee{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", pass='" + pass + '\'' +

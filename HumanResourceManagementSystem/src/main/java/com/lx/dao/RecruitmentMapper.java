@@ -12,4 +12,10 @@ public interface RecruitmentMapper {
     List<Recruitment> getRecruitmentByState(int state);
     //对招聘信息分页
     List<Recruitment> getRecruitmentByStateAndPage(int state,int begin,int end);
+    //增加招聘信息
+    void addRecruitment(Recruitment recruitment);
+    //删除招聘信息
+    void deleteRecruitment(Recruitment recruitment);
+    //修改招聘信息
+    void updateRecruitment(Recruitment recruitment);
 }

@@ -25,4 +25,19 @@ public class RecruitmentServiceImpl implements RecruitmentService {
     public List<Recruitment> getRecruitmentByStateAndPage(int state, int begin, int end) {
         return recruitmentMapper.getRecruitmentByStateAndPage(state,begin,end);
     }
+
+    @Override
+    public void addRecruitment(Recruitment recruitment) {
+        recruitmentMapper.addRecruitment(recruitment);
+    }
+
+    @Override
+    public void deleteRecruitment(Recruitment recruitment) {
+        recruitmentMapper.deleteRecruitment(recruitment);
+    }
+
+    @Override
+    public void updateRecruitment(Recruitment recruitment) {
+        recruitmentMapper.updateRecruitment(recruitment);
+    }
 }
