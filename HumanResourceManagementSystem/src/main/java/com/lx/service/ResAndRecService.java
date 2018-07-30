@@ -7,5 +7,5 @@ import com.lx.model.Resume;
  * Created by Administrator on 2018/7/26.
  */
 public interface ResAndRecService {
-    void addResAndRec(Recruitment recruitment, Resume resume );
+    void addResAndRec(int recId, int resId );
 }

@@ -58,4 +58,14 @@ public class ResumeController {
     public String addResume1(){
         return "addResume";
     }
+    //返回页面
+    @RequestMapping("/return")
+    public String return1(){
+        return "listResume";
+    }
+    //提交简历跳转到选择
+    @RequestMapping("/submitRes")
+    public String subResume(){
+        return "chooseResume";
+    }
 }

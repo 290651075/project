@@ -1,8 +1,9 @@
 package com.lx.model;
 
-import oracle.sql.DATE;
+
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * Created by Administrator on 2018/7/25.
@@ -13,23 +14,25 @@ import java.io.Serializable;
  */
 public class Recruitment implements Serializable {
     private int id;
-    private String position;//职位
-    private String department;//部门
     private String introduction;//职位简介
-    private int salary;//工资
-    private DATE date;//发布时间
-    //private int renshu    招聘人数
-    private int pId;//职位表id
+    private double salary;//工资
+    private Date date;//发布时间
+    private int pNum;// 招聘人数
     private int state;//发布状态 1代表已发布2代表未发布
+    private Position position;//职位
+    private Department department;//部门
 
     public Recruitment() {
     }
 
-    public Recruitment(String position, String department, String introduction, int salary) {
-        this.position = position;
-        this.department = department;
+    public Recruitment(String introduction, double salary, Date date, int pNum, int state, Position position, Department department) {
         this.introduction = introduction;
         this.salary = salary;
+        this.date = date;
+        this.pNum = pNum;
+        this.state = state;
+        this.position = position;
+        this.department = department;
     }
 
     public int getId() {
@@ -40,22 +43,6 @@ public class Recruitment implements Serializable {
         this.id = id;
     }
 
-    public String getPosition() {
-        return position;
-    }
-
-    public void setPosition(String position) {
-        this.position = position;
-    }
-
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
     public String getIntroduction() {
         return introduction;
     }
@@ -64,29 +51,30 @@ public class Recruitment implements Serializable {
         this.introduction = introduction;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(int salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
-    public int getpId() {
-        return pId;
-    }
-
-    public void setpId(int pId) {
-        this.pId = pId;
-    }
-
-    public DATE getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(DATE date) {
+    public void setDate(Date date) {
         this.date = date;
     }
+
+    public int getpNum() {
+        return pNum;
+    }
+
+    public void setpNum(int pNum) {
+        this.pNum = pNum;
+    }
+
 
     public int getState() {
         return state;
@@ -96,17 +84,33 @@ public class Recruitment implements Serializable {
         this.state = state;
     }
 
+    public Position getPosition() {
+        return position;
+    }
+
+    public void setPosition(Position position) {
+        this.position = position;
+    }
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+
     @Override
     public String toString() {
         return "Recruitment{" +
                 "id=" + id +
-                ", position='" + position + '\'' +
-                ", department='" + department + '\'' +
                 ", introduction='" + introduction + '\'' +
                 ", salary=" + salary +
                 ", date=" + date +
-                ", pId=" + pId +
+                ", pNum=" + pNum +
                 ", state=" + state +
+                ", position=" + position +
+                ", department=" + department +
                 '}';
     }
 }

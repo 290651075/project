@@ -17,7 +17,7 @@ public class ResAndRecServiceImpl implements ResAndRecService{
     private ResAndRecMapper resAndRecMapper;
 
     @Override
-    public void addResAndRec(Recruitment recruitment, Resume resume) {
-        resAndRecMapper.addResAndRec(recruitment,resume);
+    public void addResAndRec(int recId, int resId) {
+        resAndRecMapper.addResAndRec(recId,resId);
     }
 }

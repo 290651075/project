@@ -15,8 +15,8 @@ import javax.servlet.http.HttpSession;
 public class EmployeeController {
     @Resource
     private EmployeeService employeeService;
-    @RequestMapping("/")
-    public String ELogin(Employee employee, HttpSession session) throws Exception{
+    @RequestMapping("/lx")
+    public String ELogin(Employee employee, HttpSession session) {
         Employee employee1=employeeService.getEmployee(employee);
         if (null!=employee1){
             session.setAttribute("employee",employee1);

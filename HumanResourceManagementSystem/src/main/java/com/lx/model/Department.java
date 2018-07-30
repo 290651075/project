@@ -1,6 +1,8 @@
 package com.lx.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Administrator on 2018/7/30.
@@ -11,6 +13,7 @@ import java.io.Serializable;
 public class Department implements Serializable {
     private int id;
     private String name;
+    private List<Recruitment> recruitments=new ArrayList<>();
 
     public Department() {
     }
@@ -35,11 +38,20 @@ public class Department implements Serializable {
         this.name = name;
     }
 
+    public List<Recruitment> getRecruitments() {
+        return recruitments;
+    }
+
+    public void setRecruitments(List<Recruitment> recruitments) {
+        this.recruitments = recruitments;
+    }
+
     @Override
     public String toString() {
         return "Department{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", recruitments=" + recruitments +
                 '}';
     }
 }

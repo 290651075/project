@@ -55,16 +55,16 @@
         for (int i=0;i<recruitments.size();i++){
     %>
     <tr>
-        <td><%=recruitments.get(i).getPosition()%></td>
-        <td><%=recruitments.get(i).getPosition()%></td>
-        <td><%=recruitments.get(i).getPosition()%></td>
-        <td><%=recruitments.get(i).getPosition()%></td>
-        <td><%=recruitments.get(i).getPosition()%></td>
-        <td><%=recruitments.get(i).getPosition()%></td>
+        <td><%=recruitments.get(i).getPosition().getName()%></td>
+        <td><%=recruitments.get(i).getDepartment().getName()%></td>
+        <td><%=recruitments.get(i).getIntroduction()%></td>
+        <td><%=recruitments.get(i).getpNum()%></td>
+        <td><%=recruitments.get(i).getSalary()%></td>
+        <td><%=recruitments.get(i).getDate()%></td>
         <td>
-            <form action="#">
-                <input type="submit" value="提交简历">
-            </form>
+            <a href="chooseResume.jsp">
+                <input type="button" value="提交简历"/>
+            </a>
         </td>
     </tr>
     <%

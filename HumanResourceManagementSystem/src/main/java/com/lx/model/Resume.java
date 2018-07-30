@@ -1,8 +1,9 @@
 package com.lx.model;
 
-import oracle.sql.DATE;
+
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * Created by Administrator on 2018/7/26.
@@ -15,10 +16,10 @@ public class Resume implements Serializable{
     private int id;
     private String name;//真实姓名
     private String sex;//性别
-    private String birth;//出生年月
+    private Date birth;//出生年月
     private String school;//毕业院校\
     private String nation;//民族
-    private String graduationTime;//毕业时间
+    private Date graduationTime;//毕业时间
     private String workEXP;//工作经验
     private String birthPlace;//出生地
     private String evaluate;//自我评价
@@ -34,7 +35,7 @@ public class Resume implements Serializable{
         this.id = id;
     }
 
-    public Resume(String name, String sex, String birth, String school, Tourist tourist, String rname, String nation, String graduationTime, String workEXP, String birthPlace, String evaluate, String idCard, int phone, String email) {
+    public Resume(String name, String sex, Date birth, String school, Tourist tourist, String rname, String nation, Date graduationTime, String workEXP, String birthPlace, String evaluate, String idCard, int phone, String email) {
         this.name = name;
         this.sex = sex;
         this.birth = birth;
@@ -51,7 +52,7 @@ public class Resume implements Serializable{
         this.email = email;
     }
 
-    public Resume(String name, String sex, String birth, String school, String nation, String graduationTime, String workEXP, String birthPlace, String evaluate, String idCard, int phone, String email) {
+    public Resume(String name, String sex, Date birth, String school, String nation, Date graduationTime, String workEXP, String birthPlace, String evaluate, String idCard, int phone, String email) {
         this.name = name;
         this.sex = sex;
         this.birth = birth;
@@ -90,15 +91,19 @@ public class Resume implements Serializable{
         this.sex = sex;
     }
 
-    public String getBirth() {
+    public Date getBirth() {
         return birth;
     }
 
-    public void setBirth(String birth) {
+    public void setBirth(Date birth) {
         this.birth = birth;
     }
 
-    public void setGraduationTime(String graduationTime) {
+    public Date getGraduationTime() {
+        return graduationTime;
+    }
+
+    public void setGraduationTime(Date graduationTime) {
         this.graduationTime = graduationTime;
     }
 
@@ -189,18 +194,18 @@ public class Resume implements Serializable{
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", sex='" + sex + '\'' +
-                ", birth='" + birth + '\'' +
+                ", birth=" + birth +
                 ", school='" + school + '\'' +
-                ", tourist=" + tourist +
-                ", rname='" + rname + '\'' +
                 ", nation='" + nation + '\'' +
-                ", graduationTime='" + graduationTime + '\'' +
+                ", graduationTime=" + graduationTime +
                 ", workEXP='" + workEXP + '\'' +
                 ", birthPlace='" + birthPlace + '\'' +
                 ", evaluate='" + evaluate + '\'' +
                 ", idCard='" + idCard + '\'' +
                 ", phone=" + phone +
                 ", email='" + email + '\'' +
+                ", rname='" + rname + '\'' +
+                ", tourist=" + tourist +
                 '}';
     }
 }

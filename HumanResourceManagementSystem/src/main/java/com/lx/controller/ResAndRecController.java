@@ -17,12 +17,12 @@ import javax.servlet.http.HttpSession;
 public class ResAndRecController {
     @Resource
     private ResAndRecService resAndRecService;
-    @RequestMapping("/")
+/*    @RequestMapping("/")
     public String attendInterview(HttpSession session){
         Recruitment recruitment= (Recruitment) session.getAttribute("recruitment");
         Resume resume= (Resume) session.getAttribute("resume");
-        resAndRecService.addResAndRec(recruitment,resume);
-        return "/";
-    }
+        resAndRecService.addResAndRec(recruitment.getId(),resume.getId());
+        return "/tt";
+    }*/
 
 }

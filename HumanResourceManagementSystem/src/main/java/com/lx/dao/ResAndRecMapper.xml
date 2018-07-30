@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.lx.dao.ResAndRecMapper">
+  <!--  <resultMap id="resAndRecMap" type="resAndRec">
+        <id property="id" column="R_ID"></id>
+        <result property="recruitment.id" column="R_RECID"></result>
+        <result property="resume.id" column="R_RESID"/>
+    </resultMap>-->
     <insert id="addResAndRec">
         INSERT INTO M_RECANDRES(M_MID,M_RECID,M_RESID) VALUES (M_RECANDRES_SEQ.nextval,
         #{recId},#{resId})

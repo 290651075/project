@@ -3,21 +3,39 @@
 <mapper namespace="com.lx.dao.RecruitmentMapper">
     <resultMap id="recruitmentMap" type="recruitment">
         <id property="id" column="R_ID"></id>
-        <result property="position" column="R_POSITION"></result>
-        <result property="department" column="R_DEPARTMENT"/>
         <result property="introduction" column="R_INTRODUCTION"></result>
         <result property="salary" column="R_SALARY"></result>
         <result property="state" column="R_STATE"></result>
+        <result property="date" column="R_DATE"></result>
+        <result property="pNum" column="R_PNUM"></result>
+        <association property="department" javaType="department">
+            <id property="id" column="D_ID"/>
+            <result property="name" column="D_NAME"/>
+        </association>
+        <association property="position" javaType="position">
+            <id property="id" column="P_ID"/>
+            <result property="name" column="P_NAME"/>
+        </association>
     </resultMap>
-    <insert id="addRecruitment"></insert>
-    <update id="updateRecruitment"></update>
-    <delete id="deleteRecruitment"></delete>
+    <insert id="addRecruitment">
+        INSERT INTO R_RECRUITMENT(R_ID,R_PID,R_DID,R_INTRODUCTION,R_SALARY,R_DATE,R_STATE,R_PNUM) VALUES
+        (R_RECRUITMENT_SEQ.nextval,#{pId},#{dId},#{introduction},#{salary},#{date},#{state},#{pNum})
+    </insert>
+    <update id="updateRecruitment">
+        UPDATE R_RECRUITMENT SET R_INTRODUCTION=#{introduction}, R_SALARY=#{salary},R_PNUM=#{pNum}
+    </update>
+    <delete id="deleteRecruitment">
+        DELETE FROM R_RECRUITMENT WHERE R_ID=#{id}
+    </delete>
     <select id="getRecruitmentByState" resultMap="recruitmentMap">
         SELECT * FROM R_RECRUITMENT WHERE R_STATE=#{state}
     </select>
     <select id="getRecruitmentByStateAndPage" resultMap="recruitmentMap">
-        SELECT R_ID,R_POSITION,R_DEPARTMENT,R_INTRODUCTION,R_SALARY,R_DATE,R_STATE,R_PID FROM (SELECT rownum rn ,r.* FROM R_RECRUITMENT r WHERE
-       R_STATE=#{0})a where rn between #{1} and #{2}
+        SELECT * FROM(SELECT rownum rn ,r.* FROM R_RECRUITMENT r WHERE
+       R_STATE=#{0}) a,P_POSITION,D_DEPARTMENT
+       where a.R_PID=P_POSITION.P_ID
+       AND a.R_DID=D_DEPARTMENT.D_ID
+       AND rn between #{1} and #{2}
     </select>
 
 
