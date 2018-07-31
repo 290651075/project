@@ -12,4 +12,5 @@ import java.util.List;
 public interface InterviewService {
     List<Interview> getInterviewByT(int state, Tourist tourist);
     void updateInterview(Interview interview);
+    void addInterview(Interview interview);
 }

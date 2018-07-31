@@ -22,7 +22,7 @@
         (R_RECRUITMENT_SEQ.nextval,#{pId},#{dId},#{introduction},#{salary},#{date},#{state},#{pNum})
     </insert>
     <update id="updateRecruitment">
-        UPDATE R_RECRUITMENT SET R_INTRODUCTION=#{introduction}, R_SALARY=#{salary},R_PNUM=#{pNum}
+        UPDATE R_RECRUITMENT SET R_INTRODUCTION=#{introduction}, R_SALARY=#{salary},R_PNUM=#{pNum} WHERE R_ID=#{id}
     </update>
     <delete id="deleteRecruitment">
         DELETE FROM R_RECRUITMENT WHERE R_ID=#{id}
@@ -36,6 +36,21 @@
        where a.R_PID=P_POSITION.P_ID
        AND a.R_DID=D_DEPARTMENT.D_ID
        AND rn between #{1} and #{2}
+    </select>
+    <select id="getAllRecruitment" resultMap="recruitmentMap">
+       SELECT * FROM(SELECT rownum rn ,r.* FROM R_RECRUITMENT r) a,P_POSITION,D_DEPARTMENT
+       where a.R_PID=P_POSITION.P_ID
+       AND a.R_DID=D_DEPARTMENT.D_ID
+       AND rn between #{0} and #{1}
+    </select>
+    <select id="getRecruitment" resultMap="recruitmentMap">
+        SELECT * FROM R_RECRUITMENT
+    </select>
+    <select id="getRecruitmentById" resultMap="recruitmentMap">
+        SELECT * FROM R_RECRUITMENT,D_DEPARTMENT,P_POSITION
+        WHERE R_RECRUITMENT.R_DID=D_DEPARTMENT.D_ID
+        AND R_RECRUITMENT.R_PID=P_POSITION.P_ID
+        AND R_ID=#{id}
     </select>
 
 

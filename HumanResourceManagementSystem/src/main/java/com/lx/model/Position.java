@@ -1,6 +1,7 @@
 package com.lx.model;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by Administrator on 2018/7/30.
@@ -11,8 +12,14 @@ import java.io.Serializable;
 public class Position implements Serializable{
     private int id;
     private String name;
+    private Department department;//职位对应的部门
+    private int state;//职位等级
 
     public Position() {
+    }
+
+    public Position(Department department) {
+        this.department = department;
     }
 
     public Position(String name) {
@@ -35,11 +42,29 @@ public class Position implements Serializable{
         this.name = name;
     }
 
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+
+    public int getState() {
+        return state;
+    }
+
+    public void setState(int state) {
+        this.state = state;
+    }
+
     @Override
     public String toString() {
         return "Position{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", department=" + department +
+                ", state=" + state +
                 '}';
     }
 }

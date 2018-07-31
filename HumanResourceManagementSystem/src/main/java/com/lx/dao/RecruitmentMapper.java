@@ -18,4 +18,10 @@ public interface RecruitmentMapper {
     void deleteRecruitment(Recruitment recruitment);
     //修改招聘信息
     void updateRecruitment(Recruitment recruitment);
+    //查询所有招聘信息
+    List<Recruitment> getAllRecruitment(int begin,int end);
+    //获取所有招聘信息
+    List<Recruitment> getRecruitment();
+    //通过id查询招聘信息
+    Recruitment getRecruitmentById(Recruitment recruitment);
 }

@@ -1,6 +1,7 @@
 package com.lx.controller;
 
 import com.lx.model.Recruitment;
+import com.lx.model.ResAndRec;
 import com.lx.model.Resume;
 import com.lx.model.Tourist;
 import com.lx.service.ResAndRecService;
@@ -17,12 +18,13 @@ import javax.servlet.http.HttpSession;
 public class ResAndRecController {
     @Resource
     private ResAndRecService resAndRecService;
-/*    @RequestMapping("/")
-    public String attendInterview(HttpSession session){
+    //投递简历
+    @RequestMapping("submitRes1")
+    public String submitResume(Resume resume,HttpSession session){
         Recruitment recruitment= (Recruitment) session.getAttribute("recruitment");
-        Resume resume= (Resume) session.getAttribute("resume");
-        resAndRecService.addResAndRec(recruitment.getId(),resume.getId());
-        return "/tt";
-    }*/
+        ResAndRec resAndRec=new ResAndRec(resume,recruitment);
+        resAndRecService.addResAndRec(resAndRec);
+        return "success";
+    }
 
 }

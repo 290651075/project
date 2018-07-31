@@ -25,6 +25,7 @@
 <form action="register1" method="post">
     <input type="submit" value="注册">
 </form>
+<a href="admin1">管理员登录</a>
 <%
     List<Recruitment> recruitments= (List<Recruitment>) session.getAttribute("recruitments");
     int totalPages= (int) session.getAttribute("totalPages");
@@ -50,6 +51,11 @@
         <td><%=recruitments.get(i).getpNum()%></td>
         <td><%=recruitments.get(i).getSalary()%></td>
         <td><%=recruitments.get(i).getDate()%></td>
+        <td>
+            <a href="submitRes">
+                <input type="button" value="提交简历"/>
+            </a>
+        </td>
     </tr>
     <%
         }

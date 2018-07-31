@@ -11,9 +11,13 @@ import java.io.Serializable;
 public class ResAndRec implements Serializable{
     private int id;
     private Resume resume;//成功投递的简历
-    private Recruitment recruitment;//投递的职位
+    private Recruitment recruitment;//投递的职位(招聘信息中的）
 
     public ResAndRec() {
+    }
+
+    public ResAndRec(int id) {
+        this.id = id;
     }
 
     public ResAndRec(Resume resume, Recruitment recruitment) {

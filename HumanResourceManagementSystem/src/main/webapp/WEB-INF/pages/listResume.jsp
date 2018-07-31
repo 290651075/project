@@ -39,6 +39,14 @@
                 <input name="id" type="hidden" value="<%=resumes.get(i).getId()%>">
                 <input type="submit" value="查看">
             </form>
+            <form action="updateResume1">
+                <input name="id" type="hidden" value="<%=resumes.get(i).getId()%>">
+                <input type="submit" value="修改">
+            </form>
+            <form action="deleteResume">
+                <input name="id" type="hidden" value="<%=resumes.get(i).getId()%>">
+                <input type="submit" value="删除">
+            </form>
         </td>
     </tr>
     <%

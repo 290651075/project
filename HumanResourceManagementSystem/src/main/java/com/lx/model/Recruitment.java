@@ -25,6 +25,10 @@ public class Recruitment implements Serializable {
     public Recruitment() {
     }
 
+    public Recruitment(int id) {
+        this.id = id;
+    }
+
     public Recruitment(String introduction, double salary, Date date, int pNum, int state, Position position, Department department) {
         this.introduction = introduction;
         this.salary = salary;

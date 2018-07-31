@@ -6,6 +6,7 @@ import com.lx.service.DepartmentService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * Created by Administrator on 2018/7/30.
@@ -17,5 +18,10 @@ public class DepartmentServiceImpl implements DepartmentService {
     @Override
     public Department getDepartmentById(int dId) {
         return departmentMapper.getDepartmentById(dId);
+    }
+
+    @Override
+    public List<Department> getDepartment() {
+        return departmentMapper.getDepartment();
     }
 }

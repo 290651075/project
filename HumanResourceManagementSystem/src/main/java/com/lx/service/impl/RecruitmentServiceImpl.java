@@ -40,4 +40,19 @@ public class RecruitmentServiceImpl implements RecruitmentService {
     public void updateRecruitment(Recruitment recruitment) {
         recruitmentMapper.updateRecruitment(recruitment);
     }
+
+    @Override
+    public List<Recruitment> getAllRecruitment(int begin, int end) {
+        return recruitmentMapper.getAllRecruitment(begin,end);
+    }
+
+    @Override
+    public List<Recruitment> getRecruitment() {
+        return recruitmentMapper.getRecruitment();
+    }
+
+    @Override
+    public Recruitment getRecruitmentById(Recruitment recruitment) {
+        return recruitmentMapper.getRecruitmentById(recruitment);
+    }
 }

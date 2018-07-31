@@ -12,7 +12,7 @@ public class Employee implements Serializable{
     private int id;
     private String name;//通过“Employee”+“id”的形式规定登陆账号
     private String pass;//默认12345
-    private  int state;
+    private  int state;//1普通员工 2管理员
 
     public Employee() {
     }

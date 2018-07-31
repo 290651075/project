@@ -1,10 +1,9 @@
-<%@ page import="com.lx.model.Tourist" %>
 <%@ page import="com.lx.model.Recruitment" %>
 <%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: Administrator
-  Date: 2018/7/24
-  Time: 11:11
+  Date: 2018/7/31
+  Time: 17:47
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -18,26 +17,12 @@
     <title></title>
 </head>
 <body>
-<div id="div1">
-    <div id="div2">
-        <h1>Nice DD</h1>
-        <h3>你好，尊敬的<%
-            Tourist tourist= (Tourist) session.getAttribute("tourist");
-            out.print(tourist.getName());
-        %></h3>
-    </div>
-
-    <div id="div3">
-        <ul>
-            <li><a href="lookResume">查看简历</a></li>
-            <li><a href="addResume1">添加简历</a></li>
-            <li><a href="lookMail">查看信箱</a></li>
-        </ul>
-    </div>
-</div>
+<form action="addRec">
+    <input type="submit" value="添加招聘信息">
+</form>
 <%
-    List<Recruitment> recruitments= (List<Recruitment>) session.getAttribute("recruitments");
-    int totalPages= (int) session.getAttribute("totalPages");
+    List<Recruitment> recruitments= (List<Recruitment>) session.getAttribute("recruitments5");
+    int totalPages= (int) session.getAttribute("totalPages5");
 
 %>
 <h1>招聘信息</h1>
@@ -61,9 +46,15 @@
         <td><%=recruitments.get(i).getSalary()%></td>
         <td><%=recruitments.get(i).getDate()%></td>
         <td>
-            <form action="submitRes">
+            <form action="updateRec1">
                 <input name="id" type="hidden" value="<%=recruitments.get(i).getId()%>">
-                <input type="submit" value="提交简历"/>
+                <input type="submit" value="修改"/>
+            </form>
+        </td>
+        <td>
+            <form action="deleteRec">
+                <input name="id" type="hidden" value="<%=recruitments.get(i).getId()%>">
+                <input type="submit" value="删除"/>
             </form>
         </td>
     </tr>
@@ -74,11 +65,11 @@
 <%
     for(int i=1;i<=totalPages;i++){
 %>
-<a href="?currentPage=<%=i%>">&nbsp;<%=i%>&nbsp;</a>
+<a href="getAllRec?currentPage1=<%=i%>">&nbsp;<%=i%>&nbsp;</a>
 
 <%
     }
 %>
+
 </body>
 </html>
-

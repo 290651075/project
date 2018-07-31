@@ -15,13 +15,26 @@ import javax.servlet.http.HttpSession;
 public class EmployeeController {
     @Resource
     private EmployeeService employeeService;
-    @RequestMapping("/lx")
-    public String ELogin(Employee employee, HttpSession session) {
+    //管理员登录
+    @RequestMapping("/admin")
+    public String aLogin(Employee employee, HttpSession session) {
+        employee.setState(2);
         Employee employee1=employeeService.getEmployee(employee);
         if (null!=employee1){
-            session.setAttribute("employee",employee1);
-            return "#";
+            session.setAttribute("admin",employee1);
+            return "admin";
         }
-        return "#";
+        return "adminFail";
     }
+    //跳转
+    @RequestMapping("/admin1")
+    public String aLogin(){
+        return "adminLogin";
+    }
+    @RequestMapping("/aFail")
+    public String fail(){
+        return "login";
+    }
+
+
 }

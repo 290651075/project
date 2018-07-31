@@ -21,4 +21,5 @@ public interface ResumeMapper {
      Resume getResumeById(Resume resume);
      //分页查询简历(只分页显示简历名)
      List<Resume> getResumeByTIdAndPage(int tId,int begin,int end);
+
 }

@@ -1,8 +1,8 @@
 <%@ page import="com.lx.model.Resume" %><%--
   Created by IntelliJ IDEA.
   User: Administrator
-  Date: 2018/7/27
-  Time: 9:53
+  Date: 2018/7/31
+  Time: 23:40
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -17,7 +17,7 @@
 </head>
 <body>
 <%
-    Resume resume= (Resume) session.getAttribute("resume");
+    Resume resume= (Resume) session.getAttribute("resumeAd");
 %>
 <table >
     <tr>
@@ -49,7 +49,7 @@
         <td><%=resume.getEvaluate()%></td>
 
         <td>
-            <form action="return">
+            <form action="adReturn">
                 <input type="submit" value="返回">
             </form>
         </td>

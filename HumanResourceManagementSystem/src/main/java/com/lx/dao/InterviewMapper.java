@@ -10,7 +10,9 @@ import java.util.List;
  */
 public interface InterviewMapper {
     //查出该游客所有已邀请参加面试游客未确认是否参加的面试邀请信息
-    List<Interview> getInterviewByT(int state,Tourist tourist);
+    List<Interview> getInterviewByT(Tourist tourist);
     //游客确认是否参加面试，修改state
     void updateInterview(Interview interview);
+    //管理员邀请参加面试
+    void addInterview(Interview interview);
 }

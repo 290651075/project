@@ -13,4 +13,7 @@ public interface RecruitmentService {
     void addRecruitment(Recruitment recruitment);
     void deleteRecruitment(Recruitment recruitment);
     void updateRecruitment(Recruitment recruitment);
+    List<Recruitment> getAllRecruitment(int begin,int end);
+    List<Recruitment> getRecruitment();
+    Recruitment getRecruitmentById(Recruitment recruitment);
 }

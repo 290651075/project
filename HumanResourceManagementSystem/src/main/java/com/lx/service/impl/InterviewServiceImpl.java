@@ -25,4 +25,9 @@ public class InterviewServiceImpl implements InterviewService{
     public void updateInterview(Interview interview) {
         updateInterview(interview);
     }
+
+    @Override
+    public void addInterview(Interview interview) {
+        interviewMapper.addInterview(interview);
+    }
 }

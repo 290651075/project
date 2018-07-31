@@ -5,7 +5,17 @@
         <id property="id" column="T_ID"></id>
         <result property="inviteState" column="I_INVITESTATE"></result>
         <result property="resultState" column="I_RESULTSTATE"></result>
+        <association property="recruitment" javaType="recruitment">
+            <id property="id" column="R_ID"/>
+        </association>
+        <association property="resume" javaType="resume">
+            <id property="id" column="R_ID"/>
+        </association>
     </resultMap>
+    <insert id="addInterview">
+        INSERT INTO I_INTERVIEW (I_ID, I_RESID, I_INVITESTATE, I_RESULTSTATE, I_RECID,I_TID) VALUES (I_INTERVIEW_SEQ.nextval,
+        #{resume.id},#{inviteState},#{resultState},#{recruitment.id},#{tourist.id})
+    </insert>
     <update id="updateInterview">
         UPDATE I_INTERVIEW SET I_INVITESTATE=#{state}
     </update>
