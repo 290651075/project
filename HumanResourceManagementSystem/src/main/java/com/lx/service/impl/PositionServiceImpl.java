@@ -25,4 +25,24 @@ public class PositionServiceImpl implements PositionService {
     public List<Position> getPosition(Position position) {
         return positionMapper.getPosition(position);
     }
+
+    @Override
+    public void deleteP(Position position) {
+        positionMapper.deleteP(position);
+    }
+
+    @Override
+    public void addP(Position position) {
+        positionMapper.addP(position);
+    }
+
+    @Override
+    public void deletePById(Position position) {
+        deletePById(position);
+    }
+
+    @Override
+    public Position getPByName(Position position) {
+        return positionMapper.getPByName(position);
+    }
 }

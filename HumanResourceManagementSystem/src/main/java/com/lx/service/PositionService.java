@@ -10,4 +10,8 @@ import java.util.List;
 public interface PositionService {
     Position getPositionById(int pId);
     List<Position> getPosition(Position position);
+    void deleteP(Position position);
+    void addP(Position position);
+    void deletePById(Position position);
+    Position getPByName(Position position);
 }

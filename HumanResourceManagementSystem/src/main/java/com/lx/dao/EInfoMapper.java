@@ -11,4 +11,8 @@ import java.util.List;
 public interface EInfoMapper {
     //查询某职位下的员工
     List<EInfo> getEInfoByP(EInfo eInfo);
+    //查询某部门下的员工
+    List<EInfo> getEInfoByD(EInfo eInfo);
+    //分页查询某部门下的员工
+    List<EInfo>  getEInfoByDAndPage(int dId,int begin, int end);
 }

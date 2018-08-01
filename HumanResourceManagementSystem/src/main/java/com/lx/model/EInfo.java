@@ -22,6 +22,10 @@ public class EInfo implements Serializable{
     public EInfo() {
     }
 
+    public EInfo(Department department) {
+        this.department = department;
+    }
+
     public EInfo(String name, String sex, int age, int phone, String email, Department department, Position position, Training training) {
         this.name = name;
         this.sex = sex;

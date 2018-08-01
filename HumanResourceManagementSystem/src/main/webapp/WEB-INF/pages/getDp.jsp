@@ -36,6 +36,7 @@
     <tr>
         <td><%=departments.get(i).getName()%></td>
         <td><%=departments.get(i).getCreation()%></td>
+        <td><%=departments.get(i).getCreation()%></td>
         <td>
             <form action="getPo">
                 <input name="id" type="hidden" value="<%=departments.get(i).getId()%>">
@@ -43,18 +44,25 @@
             </form>
         </td>
         <td>
-            <form action="#">
+            <form action="deleteDp">
                 <input name="id" type="hidden" value="<%=departments.get(i).getId()%>">
                 <input type="submit" value="删除部门"/>
             </form>
         </td>
         <td>
-            <form action="#">
+            <form action="updateDp">
                 <input name="id" type="hidden" value="<%=departments.get(i).getId()%>">
                 <input type="submit" value="修改部门名称"/>
             </form>
         </td>
+        <td>
+            <form action="getDE">
+                <input name="id" type="hidden" value="<%=departments.get(i).getId()%>">
+                <input type="submit" value="查询该部门下所有员工"/>
+            </form>
+        </td>
     </tr>
+    ${requestScope.error2}
     <%
         }
     %>

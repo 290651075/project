@@ -10,7 +10,7 @@ import java.util.List;
  * Created by Administrator on 2018/7/26.
  */
 public interface InterviewService {
-    List<Interview> getInterviewByT(int state, Tourist tourist);
+    List<Interview> getInterviewByT( Tourist tourist);
     void updateInterview(Interview interview);
     void addInterview(Interview interview);
 }

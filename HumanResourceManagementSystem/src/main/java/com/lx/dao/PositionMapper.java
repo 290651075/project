@@ -12,4 +12,12 @@ public interface PositionMapper {
     Position getPositionById(int pId);
     //查询某部门下的职位
     List<Position> getPosition(Position position);
+    //删除某部门下的职位
+    void deleteP(Position position);
+    //添加职位
+    void addP(Position position);
+    //通过id删除职位
+    void deletePById(Position position);
+    //根据名字查询职位
+    Position getPByName(Position position);
 }

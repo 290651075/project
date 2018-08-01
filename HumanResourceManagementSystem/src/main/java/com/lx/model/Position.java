@@ -12,10 +12,20 @@ import java.util.List;
 public class Position implements Serializable{
     private int id;
     private String name;
-    private Department department;//职位对应的部门
     private int state;//职位等级
+    private Department department;//职位对应的部门
 
     public Position() {
+    }
+
+    public Position(String name, int state) {
+        this.name = name;
+        this.state = state;
+    }
+
+    public Position(String name, Department department) {
+        this.name = name;
+        this.department = department;
     }
 
     public Position(Department department) {
