@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lx.dao.ResumeMapper">
+    <resultMap id="resumeMapper" type="resume">
+        <id property="id" column="R_ID"></id>
+        <result property="name" column="R_NAME"></result>
+        <result property="sex" column="R_SEX"></result>
+        <result property="birth" column="R_BIRTH"></result>
+        <result property="school" column="R_SCHOOL"></result>
+        <result property="rname" column="R_RNAME"></result>
+        <result property="nation" column="R_NATION"></result>
+        <result property="graduationTime" column="R_GRADUATIONTIME"></result>
+        <result property="workEXP" column="R_WORKEXP"></result>
+        <result property="birthPlace" column="R_BIRTHPLACE"></result>
+        <result property="evaluate" column="R_EVALUATE"></result>
+        <result property="idCard" column="R_IDCARD"></result>
+        <result property="phone" column="R_PHONE"></result>
+        <result property="email" column="R_EMAIL"></result>
+        <association property="tourist" javaType="tourist">
+            <id property="id" column="T_ID"/>
+        </association>
+    </resultMap>
+    <select id="getResume" resultMap="resumeMapper">
+        SELECT *FROM R_RESUME WHERE R_TID=#{id}
+    </select>
+    <select id="getResumeById" resultMap="resumeMapper">
+        SELECT * FROM  R_RESUME,T_TOURIST
+        WHERE R_RESUME.R_TID=T_TOURIST.T_ID
+        AND R_ID=#{id}
+    </select>
+    <select id="getResumeByTIdAndPage" resultMap="resumeMapper">
+        SELECT R_ID, R_NAME, R_SEX, R_BIRTH, R_SCHOOL, R_RNAME, R_NATION, R_GRADUATIONTIME, R_WORKEXP, R_BIRTHPLACE,
+        R_EVALUATE, R_IDCARD, R_PHONE, R_EMAIL FROM (SELECT rownum rn ,r.* from R_RESUME r WHERE R_TID=#{0})a where rn between #{1} and #{2}
+    </select>
+    <insert id="addResume">
+        INSERT INTO R_RESUME (R_ID, R_NAME, R_SEX, R_BIRTH, R_SCHOOL,R_TID, R_RNAME, R_NATION, R_GRADUATIONTIME, R_WORKEXP, R_BIRTHPLACE,
+        R_EVALUATE, R_IDCARD, R_PHONE, R_EMAIL) VALUES (R_RESUME_SEQ.nextval,#{name},#{sex},#{birth},#{school},#{tourist.id},
+        #{rname},#{nation},#{graduationTime},#{workEXP},#{birthPlace},#{evaluate},#{idCard},#{phone},#{email})
+    </insert>
+    <update id="updateResume">
+         UPDATE R_RESUME
+         <set>
+             <if test="name!=null">
+                 R_NAME=#{name},
+             </if>
+             <if test="sex!=null">
+                 R_SEX=#{sex},
+             </if>
+             <if test="birth!=null">
+                 R_BIRTH=#{birth},
+             </if>
+             <if test="school!=null">
+                 R_SCHOOL=#{school},
+             </if>
+             <if test="rname!=null">
+                 R_RNAME=#{rname},
+             </if>
+             <if test="nation!=null">
+                 R_NATION=#{nation},
+             </if>
+             <if test="graduationTime!=null">
+                 R_GRADUATIONTIME=#{graduationTime},
+             </if>
+             <if test="workEXP!=null">
+                 R_WORKEXP=#{workEXP},
+             </if>
+             <if test="birthPlace!=null">
+                 R_BIRTHPLACE=#{birthPlace},
+             </if>
+             <if test="evaluate!=null">
+                 R_EVALUATE=#{evaluate},
+             </if>
+             <if test="idCard!=null">
+                 R_IDCARD=#{idCard},
+             </if>
+             <if test="phone!=null">
+                 R_PHONE=#{phone},
+             </if>
+             <if test="email!=null">
+                 R_EMAIL=#{email}
+             </if>
+         </set>
+        WHERE R_ID=#{id}
+    </update>
+    <delete id="deleteResume">
+        DELETE FROM R_RESUME WHERE R_ID=#{id}
+    </delete>
+
+</mapper>

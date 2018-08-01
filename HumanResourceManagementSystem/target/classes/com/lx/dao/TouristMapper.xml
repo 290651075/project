@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lx.dao.TouristMapper">
+    <resultMap id="touristMap" type="tourist">
+        <id property="id" column="T_ID"></id>
+        <result property="name" column="T_NAME"></result>
+        <result property="pass" column="T_PASS"></result>
+        <result property="state" column="T_STATE"></result>
+    </resultMap>
+    <insert id="addTourist">
+         INSERT INTO T_TOURIST(T_ID,T_NAME,T_PASS,T_STATE) VALUES (T_TOURIST_SEQ.nextval,#{name},#{pass},1)
+    </insert>
+    <select id="getTourist" resultMap="touristMap">
+         SELECT * FROM T_TOURIST WHERE T_NAME=#{name} AND T_PASS=#{pass}
+    </select>
+</mapper>

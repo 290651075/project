@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lx.dao.DepartmentMapper">
+    <resultMap id="departmentMap" type="department">
+        <id property="id" column="D_ID"></id>
+        <result property="name" column="D_NAME"></result>
+        <result property="creation" column="D_CREATION"></result>
+    </resultMap>
+    <insert id="addDepartment">
+        INSERT INTO D_DEPARTMENT (D_ID, D_NAME, D_CREATION) VALUES (D_DEPARTMENT_SEQ.nextval,#{name},sysdate)
+    </insert>
+    <update id="updateDpByName">
+        UPDATE D_DEPARTMENT SET D_NAME=#{name} WHERE D_ID=#{id}
+    </update>
+    <delete id="deleteDp">
+        DELETE FROM D_DEPARTMENT WHERE D_ID=#{id}
+    </delete>
+    <select id="getDepartmentById" resultMap="departmentMap">
+        SELECT * FROM D_DEPARTMENT WHERE D_ID=#{id}
+    </select>
+    <select id="getDepartment" resultMap="departmentMap">
+        SELECT * FROM  D_DEPARTMENT
+    </select>
+    <select id="getDepartmentByName" resultMap="departmentMap">
+        SELECT * FROM  D_DEPARTMENT WHERE D_NAME=#{name}
+    </select>
+</mapper>

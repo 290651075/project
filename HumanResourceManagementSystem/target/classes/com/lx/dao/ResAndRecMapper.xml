@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lx.dao.ResAndRecMapper">
+    <resultMap id="resAndRecMap" type="resAndRec">
+        <id property="id" column="M_MID"></id>
+       <association property="recruitment" javaType="recruitment">
+           <id property="id" column="R_ID"/>
+       </association>
+        <association property="resume" javaType="resume">
+            <id property="id" column="R_ID"/>
+        </association>
+    </resultMap>
+    <insert id="addResAndRec">
+        INSERT INTO M_RECANDRES(M_MID,M_RECID,M_RESID) VALUES (M_RECANDRES_SEQ.nextval,
+        #{recruitment.id},#{resume.id})
+    </insert>
+    <delete id="deleteResAndRecById">
+        DELETE FROM  M_RECANDRES WHERE M_MID=#{id}
+    </delete>
+    <select id="getAllResAndRec" resultMap="resAndRecMap">
+        SELECT  * FROM M_RECANDRES,R_RECRUITMENT,R_RESUME
+        WHERE M_RECANDRES.M_RECID=R_RECRUITMENT.R_ID
+        AND M_RECANDRES.M_RESID=R_RESUME.R_ID
+    </select>
+    <select id="getResAndRecById" resultMap="resAndRecMap">
+        SELECT  * FROM M_RECANDRES,R_RECRUITMENT,R_RESUME
+        WHERE M_RECANDRES.M_RECID=R_RECRUITMENT.R_ID
+        AND M_RECANDRES.M_RESID=R_RESUME.R_ID
+        AND M_MID=#{id}
+    </select>
+</mapper>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lx.dao.EmployeeMapper">
+    <resultMap id="employeeMap" type="employee">
+        <id property="id" column="E_ID"></id>
+        <result property="name" column="E_NAME"></result>
+        <result property="pass" column="E_PASS"></result>
+        <result property="state" column="E_STATE"></result>
+    </resultMap>
+    <select id="getEmployee" resultMap="employeeMap">
+        SELECT * FROM E_EMPLOYEE WHERE E_NAME=#{name} AND E_PASS=#{pass} AND E_STATE=#{state}
+    </select>
+</mapper>

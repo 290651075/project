@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lx.dao.InterviewMapper">
+    <resultMap id="interviewtMap" type="interview">
+        <id property="id" column="T_ID"></id>
+        <result property="inviteState" column="I_INVITESTATE"></result>
+        <result property="resultState" column="I_RESULTSTATE"></result>
+        <association property="recruitment" javaType="recruitment">
+            <id property="id" column="R_ID"/>
+        </association>
+        <association property="resume" javaType="resume">
+            <id property="id" column="R_ID"/>
+        </association>
+    </resultMap>
+    <insert id="addInterview">
+        INSERT INTO I_INTERVIEW (I_ID, I_RESID, I_INVITESTATE, I_RESULTSTATE, I_RECID,I_TID) VALUES (I_INTERVIEW_SEQ.nextval,
+        #{resume.id},#{inviteState},#{resultState},#{recruitment.id},#{tourist.id})
+    </insert>
+    <update id="updateInterview">
+        UPDATE I_INTERVIEW SET I_INVITESTATE=#{state}
+    </update>
+    <select id="getInterviewByT" resultMap="interviewtMap">
+        SELECT * FROM WHERE  I_TID=#{id} AND I_INVITESTATE=#{stae}
+    </select>
+</mapper>

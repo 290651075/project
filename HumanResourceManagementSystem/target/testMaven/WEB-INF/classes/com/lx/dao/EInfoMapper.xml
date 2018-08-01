@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lx.dao.EInfoMapper">
+    <resultMap id="eInfoMap" type="eInfo">
+        <id property="id" column="EI_ID"></id>
+        <result property="name" column="EI_NAME"></result>
+        <result property="sex" column="EI_SEX"></result>
+        <result property="age" column="EI_AGE"></result>
+        <result property="phone" column="EI_PHONE"></result>
+        <result property="email" column="EI_EMAIL"></result>
+        <association property="department" javaType="department">
+            <id property="id" column="D_ID"/>
+            <result property="name" column="D_NAEM"/>
+        </association>
+        <association property="position" javaType="position">
+            <id property="id" column="P_ID"/>
+            <result property="name" column="P_NAME"/>
+        </association>
+    </resultMap>
+    <select id="getEInfoByP" resultMap="eInfoMap">
+        SELECT *FROM EI_EINFO WHERE EI_PID=#{position.id}
+    </select>
+    <select id="getEInfoByD" resultMap="eInfoMap">
+        SELECT *FROM EI_EINFO WHERE EI_DID=#{department.id}
+    </select>
+    <select id="getEInfoByDAndPage" resultType="com.lx.model.EInfo">
+        SELECT * FROM(SELECT rownum rn ,r.* FROM EI_EINFO r WHERE
+       EI_DID=#{0}) where rn between #{1} and #{2}
+    </select>
+</mapper>

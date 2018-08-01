@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lx.dao.RecruitmentMapper">
+    <resultMap id="recruitmentMap" type="recruitment">
+        <id property="id" column="R_ID"></id>
+        <result property="introduction" column="R_INTRODUCTION"></result>
+        <result property="salary" column="R_SALARY"></result>
+        <result property="state" column="R_STATE"></result>
+        <result property="date" column="R_DATE"></result>
+        <result property="pNum" column="R_PNUM"></result>
+        <association property="department" javaType="department">
+            <id property="id" column="D_ID"/>
+            <result property="name" column="D_NAME"/>
+        </association>
+        <association property="position" javaType="position">
+            <id property="id" column="P_ID"/>
+            <result property="name" column="P_NAME"/>
+        </association>
+    </resultMap>
+    <insert id="addRecruitment">
+        INSERT INTO R_RECRUITMENT(R_ID,R_PID,R_DID,R_INTRODUCTION,R_SALARY,R_DATE,R_STATE,R_PNUM) VALUES
+        (R_RECRUITMENT_SEQ.nextval,#{pId},#{dId},#{introduction},#{salary},#{date},#{state},#{pNum})
+    </insert>
+    <update id="updateRecruitment">
+        UPDATE R_RECRUITMENT SET R_INTRODUCTION=#{introduction}, R_SALARY=#{salary},R_PNUM=#{pNum} WHERE R_ID=#{id}
+    </update>
+    <delete id="deleteRecruitment">
+        DELETE FROM R_RECRUITMENT WHERE R_ID=#{id}
+    </delete>
+    <select id="getRecruitmentByState" resultMap="recruitmentMap">
+        SELECT * FROM R_RECRUITMENT WHERE R_STATE=#{state}
+    </select>
+    <select id="getRecruitmentByStateAndPage" resultMap="recruitmentMap">
+        SELECT * FROM(SELECT rownum rn ,r.* FROM R_RECRUITMENT r WHERE
+       R_STATE=#{0}) a,P_POSITION,D_DEPARTMENT
+       where a.R_PID=P_POSITION.P_ID
+       AND a.R_DID=D_DEPARTMENT.D_ID
+       AND rn between #{1} and #{2}
+    </select>
+    <select id="getAllRecruitment" resultMap="recruitmentMap">
+       SELECT * FROM(SELECT rownum rn ,r.* FROM R_RECRUITMENT r) a,P_POSITION,D_DEPARTMENT
+       where a.R_PID=P_POSITION.P_ID
+       AND a.R_DID=D_DEPARTMENT.D_ID
+       AND rn between #{0} and #{1}
+    </select>
+    <select id="getRecruitment" resultMap="recruitmentMap">
+        SELECT * FROM R_RECRUITMENT
+    </select>
+    <select id="getRecruitmentById" resultMap="recruitmentMap">
+        SELECT * FROM R_RECRUITMENT,D_DEPARTMENT,P_POSITION
+        WHERE R_RECRUITMENT.R_DID=D_DEPARTMENT.D_ID
+        AND R_RECRUITMENT.R_PID=P_POSITION.P_ID
+        AND R_ID=#{id}
+    </select>
+
+
+</mapper>
