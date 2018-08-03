@@ -24,4 +24,19 @@ public class EInfoServiceImpl implements EInfoService {
     public List<EInfo> getEInfoByDAndPage(int dId, int begin, int end) {
         return eInfoMapper.getEInfoByDAndPage(dId,begin,end);
     }
+
+    @Override
+    public List<EInfo> getEInfoByP(EInfo eInfo) {
+        return eInfoMapper.getEInfoByP(eInfo);
+    }
+
+    @Override
+    public List<EInfo> getEInfoByPAndPage(int pId, int begin, int end) {
+        return eInfoMapper.getEInfoByPAndPage(pId,begin,end);
+    }
+
+    @Override
+    public EInfo getEInfoById(EInfo eInfo) {
+        return eInfoMapper.getEInfoById(eInfo);
+    }
 }

@@ -20,16 +20,20 @@ public class RecruitmentController {
     @Resource
     private RecruitmentService recruitmentService;
     //显示招聘信息(分页）
-    @RequestMapping("/ ")
+    @RequestMapping("/")
     public String getRecruitmentInfo(@RequestParam(value = "currentPage",defaultValue = "1")int currentPage, HttpSession session){
         int state=1;
         List<Recruitment> recruitments=recruitmentService.getRecruitmentByState(state);
+        System.out.println("********");
+        System.out.println(recruitments);
         int totalNum=recruitments.size();
         int pageSize=1;
         int totalPages=totalNum%pageSize==0?totalNum/pageSize:totalNum/pageSize+1;
         int begin = (currentPage-1)*pageSize+1;
         int end = (currentPage-1)*pageSize+pageSize;
         List<Recruitment> recruitments1=recruitmentService.getRecruitmentByStateAndPage(state,begin,end);
+        System.out.println("##########");
+        System.out.println(recruitments1.size());
         session.setAttribute("recruitments",recruitments1);
         session.setAttribute("totalPages",totalPages);
         return "../../login";
@@ -49,10 +53,10 @@ public class RecruitmentController {
         return "aRec";
     }
     //添加招聘信息
-    @RequestMapping("/aa")
+    @RequestMapping("/addRec1")
     public String addRec(Recruitment recruitment,HttpSession session){
         recruitmentService.addRecruitment(recruitment);
-        return "aa";
+        return "addRec1";
     }
     @RequestMapping("/addRec")
     public String addRec(){

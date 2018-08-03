@@ -18,6 +18,10 @@ public class Position implements Serializable{
     public Position() {
     }
 
+    public Position(int id) {
+        this.id = id;
+    }
+
     public Position(String name, int state) {
         this.name = name;
         this.state = state;

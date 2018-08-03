@@ -36,7 +36,6 @@
     <tr>
         <td><%=departments.get(i).getName()%></td>
         <td><%=departments.get(i).getCreation()%></td>
-        <td><%=departments.get(i).getCreation()%></td>
         <td>
             <form action="getPo">
                 <input name="id" type="hidden" value="<%=departments.get(i).getId()%>">

@@ -29,7 +29,6 @@
 <%
     List<Recruitment> recruitments= (List<Recruitment>) session.getAttribute("recruitments");
     int totalPages= (int) session.getAttribute("totalPages");
-
 %>
 <h1>招聘信息</h1>
 <table >
@@ -69,9 +68,6 @@
 <%
     }
 %>
-
-
-
 </body>
 </html>
 

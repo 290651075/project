@@ -4,6 +4,7 @@
     <resultMap id="positionMap" type="position">
         <id property="id" column="P_ID"></id>
         <result property="name" column="P_NAME"></result>
+        <result property="state" column="P_STATE"></result>
         <association property="department" javaType="department">
             <id property="id" column="D_ID"/>
         </association>
@@ -11,6 +12,9 @@
     <insert id="addP">
         INSERT INTO P_POSITION (P_ID, P_NAME, P_DID, P_STATE) VALUES (P_POSITION_SEQ.nextval,#{name},#{department.id},#{state})
     </insert>
+    <update id="updatePById">
+        UPDATE P_POSITION SET P_NAME=#{name} WHERE P_ID=#{id}
+    </update>
     <delete id="deleteP">
         DELETE FROM P_POSITION WHERE P_DID=#{department.id}
     </delete>
@@ -18,7 +22,7 @@
         DELETE FROM  P_POSITION WHERE P_ID=#{id}
     </delete>
     <select id="getPositionById" resultMap="positionMap">
-        SELECT * FROM P_POSITION WHERE ID=#{pId}
+        SELECT * FROM P_POSITION WHERE P_ID=#{id}
     </select>
     <select id="getPosition" resultMap="positionMap">
         SELECT * FROM P_POSITION WHERE P_DID=#{department.id}

@@ -20,10 +20,16 @@
     <input type="submit" value="查看所有招聘信息">
 </form>
 <form action="getAllRes">
-    <input type="submit" value="查看简历">
+    <input type="submit" value="查看面试简历">
+</form>
+<form action="getAllint">
+    <input type="submit" value="进行面试">
 </form>
 <form action="getDp">
     <input type="submit" value="管理部门">
+</form>
+<form action="getTR">
+    <input type="submit" value="管理培训">
 </form>
 </body>
 </html>

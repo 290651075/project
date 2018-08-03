@@ -10,4 +10,7 @@ import java.util.List;
 public interface EInfoService {
     List<EInfo> getEInfoByD(EInfo eInfo);
     List<EInfo>  getEInfoByDAndPage(int dId,int begin, int end);
+    List<EInfo> getEInfoByP(EInfo eInfo);
+    List<EInfo>  getEInfoByPAndPage(int pId,int begin, int end);
+    EInfo getEInfoById(EInfo eInfo);
 }

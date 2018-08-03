@@ -24,7 +24,14 @@
         SELECT *FROM EI_EINFO WHERE EI_DID=#{department.id}
     </select>
     <select id="getEInfoByDAndPage" resultType="com.lx.model.EInfo">
-        SELECT * FROM(SELECT rownum rn ,r.* FROM EI_EINFO r WHERE
+      SELECT * FROM(SELECT rownum rn ,r.* FROM EI_EINFO r WHERE
        EI_DID=#{0}) where rn between #{1} and #{2}
+    </select>
+    <select id="getEInfoByPAndPage" resultMap="eInfoMap">
+      SELECT * FROM(SELECT rownum rn ,r.* FROM EI_EINFO r WHERE
+       EI_PID=#{0}) where rn between #{1} and #{2}
+    </select>
+    <select id="getEInfoById" resultMap="eInfoMap">
+        SELECT *FROM EI_EINFO WHERE EI_ID={id}
     </select>
 </mapper>

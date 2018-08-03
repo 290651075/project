@@ -19,7 +19,7 @@
     </resultMap>
     <insert id="addRecruitment">
         INSERT INTO R_RECRUITMENT(R_ID,R_PID,R_DID,R_INTRODUCTION,R_SALARY,R_DATE,R_STATE,R_PNUM) VALUES
-        (R_RECRUITMENT_SEQ.nextval,#{pId},#{dId},#{introduction},#{salary},#{date},#{state},#{pNum})
+        (R_RECRUITMENT_SEQ.nextval,#{position.id},#{department.id},#{introduction},#{salary},#{date},#{state},#{pNum})
     </insert>
     <update id="updateRecruitment">
         UPDATE R_RECRUITMENT SET R_INTRODUCTION=#{introduction}, R_SALARY=#{salary},R_PNUM=#{pNum} WHERE R_ID=#{id}
@@ -31,8 +31,8 @@
         SELECT * FROM R_RECRUITMENT WHERE R_STATE=#{state}
     </select>
     <select id="getRecruitmentByStateAndPage" resultMap="recruitmentMap">
-        SELECT * FROM(SELECT rownum rn ,r.* FROM R_RECRUITMENT r WHERE
-       R_STATE=#{0}) a,P_POSITION,D_DEPARTMENT
+      SELECT * FROM(SELECT rownum rn ,r.* FROM R_RECRUITMENT r WHERE
+       r.R_STATE=#{0}) a,P_POSITION,D_DEPARTMENT
        where a.R_PID=P_POSITION.P_ID
        AND a.R_DID=D_DEPARTMENT.D_ID
        AND rn between #{1} and #{2}

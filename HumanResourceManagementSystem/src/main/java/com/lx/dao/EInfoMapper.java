@@ -15,4 +15,9 @@ public interface EInfoMapper {
     List<EInfo> getEInfoByD(EInfo eInfo);
     //分页查询某部门下的员工
     List<EInfo>  getEInfoByDAndPage(int dId,int begin, int end);
+    //分页查询某职位吓得员工
+    List<EInfo>  getEInfoByPAndPage(int pId,int begin, int end);
+    //通过id查询员工
+    EInfo getEInfoById(EInfo eInfo);
+
 }

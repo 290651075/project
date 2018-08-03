@@ -37,19 +37,19 @@
         <td><%=positions.get(i).getName()%></td>
         <td><%=positions.get(i).getState()%></td>
         <td>
-            <form action="getEm">
+            <form action="getPEm">
                 <input name="id" type="hidden" value="<%=positions.get(i).getId()%>">
                 <input type="submit" value="查询该职位下的员工"/>
             </form>
         </td>
         <td>
-            <form action="#">
+            <form action="deletePo">
                 <input name="id" type="hidden" value="<%=positions.get(i).getId()%>">
                 <input type="submit" value="删除职位"/>
             </form>
         </td>
         <td>
-            <form action="#">
+            <form action="updatePo">
                 <input name="id" type="hidden" value="<%=positions.get(i).getId()%>">
                 <input type="submit" value="修改职位名称"/>
             </form>

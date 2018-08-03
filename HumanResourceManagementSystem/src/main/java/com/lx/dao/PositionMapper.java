@@ -9,7 +9,7 @@ import java.util.List;
  */
 public interface PositionMapper {
     //通过id得到职位
-    Position getPositionById(int pId);
+    Position getPositionById(Position position);
     //查询某部门下的职位
     List<Position> getPosition(Position position);
     //删除某部门下的职位
@@ -20,4 +20,6 @@ public interface PositionMapper {
     void deletePById(Position position);
     //根据名字查询职位
     Position getPByName(Position position);
+    //修改职位名称
+    void updatePById(Position position);
 }

@@ -2,8 +2,8 @@
 <%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: Administrator
-  Date: 2018/8/1
-  Time: 14:40
+  Date: 2018/8/2
+  Time: 16:18
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -18,40 +18,30 @@
 </head>
 <body>
 <%
-<%
-    List<Department> eInfos= (List<Department>) session.getAttribute("eInfosDE");
-    int totalPages= (int) session.getAttribute("totalPagesDE");
+    List<Department> departments= (List<Department>) session.getAttribute("departmentsTR");
+
 %>
+<h1>部门列表</h1>
 <table >
     <tr>
-        <th>员工姓名</th>
-
+        <th>部门名称</th>
     </tr>
     <%
-        for (int i=0;i<eInfos.size();i++){
+        for (int i=0;i<departments.size();i++){
     %>
     <tr>
-        <td><%=eInfos.get(i).getName()%></td>
-
+        <td><%=departments.get(i).getName()%></td>
         <td>
-            <form action="listEIfoDetail">
-                <input name="id" type="hidden" value="<%=eInfos.get(i).getId()%>">
-                <input type="submit" value="查看">
+            <form action="chooseIS">
+                <input name="id" type="hidden" value="<%=departments.get(i).getId()%>">
+                <input type="submit" value="确认"/>
             </form>
         </td>
     </tr>
     <%
         }
     %>
+    ${requestScope.error}
 </table>
-<%
-    for(int i=1;i<=totalPages;i++){
-%>
-<a href="?currentPage=<%=i%>">&nbsp;<%=i%>&nbsp;</a>
-
-<%
-    }
-%>
-%>
 </body>
 </html>

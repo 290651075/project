@@ -25,6 +25,18 @@ public class Interview implements Serializable{
         this.id = id;
     }
 
+    public Interview(Resume resume, Recruitment recruitment, Tourist tourist, int inviteState, int resultState) {
+        this.resume = resume;
+        this.recruitment = recruitment;
+        this.tourist = tourist;
+        this.inviteState = inviteState;
+        this.resultState = resultState;
+    }
+
+    public Interview(Tourist tourist) {
+        this.tourist = tourist;
+    }
+
     public Interview(Resume resume, Recruitment recruitment, int inviteState, int resultState) {
         this.resume = resume;
         this.recruitment = recruitment;
@@ -86,6 +98,7 @@ public class Interview implements Serializable{
                 "id=" + id +
                 ", resume=" + resume +
                 ", recruitment=" + recruitment +
+                ", tourist=" + tourist +
                 ", inviteState=" + inviteState +
                 ", resultState=" + resultState +
                 '}';

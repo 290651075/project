@@ -1,4 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.lx.dao.TrainingMapper">
+    <resultMap id="trainingMap" type="training">
+        <id property="id" column="T_ID"></id>
+        <result property="theme" column="T_THEME"></result>
+        <result property="start" column="T_STARE"></result>
+        <result property="end" column="T_END"></result>
+        <result property="trainingCon" column="T_TRAININGCON"></result>
+        <result property="place" column="T_PLACE"></result>
+        <result property="state" column="T_STATE"></result>
+        <result property="issueTime" column="T_ISSUETIME"></result>
+    </resultMap>
+    <insert id="addTR">
+        <selectKey resultType="integer" order="BEFORE" keyProperty="id">
+            SELECT T_TRAINING_SEQ.nextval FROM DUAL
+        </selectKey>
+        INSERT INTO T_TRAINING (T_ID, T_THEME, T_START, T_END, T_TRAININGCON, T_PLACE, T_STATE, T_ISSUETIME) VALUES
+        (T_TRAINING_SEQ.nextval,#{theme},#{start},#{end},#{trainingCon},#{place},#{state},sysdate)
+    </insert>
+    <insert id="addTR1">
+        INSERT INTO M_EIANDTR (M_ID, M_EIID, M_TID) VALUES (M_EIANDTR_SEQ.nextval,#{0},#{1})
+    </insert>
+    <update id="updateTR">
+        UPDATE T_TRAINING SET T_THEME=#{theme},T_START=#{start},T_END=#{end},T_TRAININGCON=#{trainingCon},T_PLACE=#{place}
+        WHERE T_ID=#{id}
+    </update>
+    <update id="revokeTR">
+
+    </update>
+    <select id="getTR" resultMap="trainingMap">
+        SELECT * FROM T_TRAINING
+    </select>
+    <select id="getTRByPage" resultMap="trainingMap">
+         SELECT * FROM(SELECT rownum rn ,r.* FROM T_TRAINING r) where rn between #{0} and #{1}
+    </select>
+    <select id="getTRById" resultMap="trainingMap">
+        SELECT * FROM T_TRAINING WHERE T_ID=#{id}
+    </select>
 </mapper>

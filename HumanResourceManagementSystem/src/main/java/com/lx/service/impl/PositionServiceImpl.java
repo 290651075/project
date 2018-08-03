@@ -17,8 +17,8 @@ public class PositionServiceImpl implements PositionService {
     private PositionMapper positionMapper;
 
     @Override
-    public Position getPositionById(int pId) {
-        return positionMapper.getPositionById(pId);
+    public Position getPositionById(Position position) {
+        return positionMapper.getPositionById(position);
     }
 
     @Override
@@ -38,11 +38,16 @@ public class PositionServiceImpl implements PositionService {
 
     @Override
     public void deletePById(Position position) {
-        deletePById(position);
+        positionMapper.deletePById(position);
     }
 
     @Override
     public Position getPByName(Position position) {
         return positionMapper.getPByName(position);
+    }
+
+    @Override
+    public void updatePById(Position position) {
+        positionMapper.updatePById(position);
     }
 }

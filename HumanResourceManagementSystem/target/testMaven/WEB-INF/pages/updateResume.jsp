@@ -34,7 +34,6 @@
     身份证号：<input id="idCard" type="text" name="idCard" value="<%=resume.getIdCard()%>"/><br/>
     电话号码：<input id="phone" type="text" name="phone" value="<%=resume.getPhone()%>"/><br/>
     电子邮箱：<input id="email" type="text" name="email" value="<%=resume.getEmail()%>"/><br/>
-
     <input type="submit" value="确认修改">
 </form>
 </body>

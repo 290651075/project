@@ -17,8 +17,8 @@ public class InterviewServiceImpl implements InterviewService{
     @Resource
     private InterviewMapper interviewMapper;
     @Override
-    public List<Interview> getInterviewByT(Tourist tourist) {
-        return interviewMapper.getInterviewByT(tourist);
+    public List<Interview> getInterviewByT(Interview interview) {
+        return interviewMapper.getInterviewByT(interview);
     }
 
     @Override

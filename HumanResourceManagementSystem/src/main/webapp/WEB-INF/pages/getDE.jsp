@@ -1,4 +1,5 @@
-<%--
+<%@ page import="com.lx.model.Department" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: Administrator
   Date: 2018/8/1
@@ -16,6 +17,41 @@
     <title></title>
 </head>
 <body>
+<%
+<%
+    List<Department> eInfos= (List<Department>) session.getAttribute("eInfosDE");
+    int totalPages= (int) session.getAttribute("totalPagesDE");
+%>
+<table >
+    <tr>
+        <th>员工姓名</th>
 
+    </tr>
+    <%
+        for (int i=0;i<eInfos.size();i++){
+    %>
+    <tr>
+        <td><%=eInfos.get(i).getName()%></td>
+
+        <td>
+            <form action="listEIfoDetail">
+                <input name="id" type="hidden" value="<%=eInfos.get(i).getId()%>">
+                <input type="submit" value="查看">
+            </form>
+        </td>
+    </tr>
+    <%
+        }
+    %>
+</table>
+<%
+    for(int i=1;i<=totalPages;i++){
+%>
+<a href="?currentPage=<%=i%>">&nbsp;<%=i%>&nbsp;</a>
+
+<%
+    }
+%>
+%>
 </body>
 </html>

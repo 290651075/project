@@ -16,6 +16,10 @@
     <title></title>
 </head>
 <body>
-
+<form action="updatePo1" method="post">
+    请输入部门名：<input id="name" type="text" name="name" value="${sessionScope.position.name}">
+    <input type="submit" value="确认修改">
+    ${requestScope.error}
+</form>
 </body>
 </html>

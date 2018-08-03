@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
-  Date: 2018/7/31
-  Time: 17:24
+  Date: 2018/8/2
+  Time: 16:06
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -16,20 +16,13 @@
     <title></title>
 </head>
 <body>
-<form action="getAllRec">
-    <input type="submit" value="查看所有招聘信息">
-</form>
-<form action="getAllRes">
-    <input type="submit" value="查看面试简历">
-</form>
-<form action="getAllint">
-    <input type="submit" value="进行面试">
-</form>
-<form action="getDp">
-    <input type="submit" value="管理部门">
-</form>
-<form action="getTR">
-    <input type="submit" value="管理培训">
+<form action="addTR1" method="post">
+    主题：    <input id="theme" type="text" name="theme"/><br/>
+    开始时间：<input id="start" type="date" name="start"/><br/>
+    结束时间：<input id="end" type="date" name="end"/><br/>
+    培训内容：<input id="trainingCon" type="text" name="trainingCon"/><br/>
+    培训地点：<input id="place" type="text" name="place"/><br/>
+    <input type="submit" value="完成">
 </form>
 </body>
 </html>

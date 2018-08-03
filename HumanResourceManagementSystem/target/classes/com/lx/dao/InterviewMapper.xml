@@ -17,9 +17,9 @@
         #{resume.id},#{inviteState},#{resultState},#{recruitment.id},#{tourist.id})
     </insert>
     <update id="updateInterview">
-        UPDATE I_INTERVIEW SET I_INVITESTATE=#{state}
+        UPDATE I_INTERVIEW SET I_INVITESTATE=#{state} WHERE I_ID=#{id}
     </update>
     <select id="getInterviewByT" resultMap="interviewtMap">
-        SELECT * FROM WHERE  I_TID=#{id} AND I_INVITESTATE=#{stae}
+        SELECT * FROM WHERE  I_TID=#{tourist.id} AND I_INVITESTATE=#{inviteState} AND I_RESULTSTATE=#{resultState}
     </select>
 </mapper>

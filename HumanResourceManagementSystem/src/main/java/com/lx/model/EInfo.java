@@ -17,7 +17,7 @@ public class EInfo implements Serializable{
     private String email;
     private Department department;//部门
     private Position position;//职位
-    private Training training;//培训
+    private Employee employee;//对应该信息的员工
 
     public EInfo() {
     }
@@ -26,15 +26,8 @@ public class EInfo implements Serializable{
         this.department = department;
     }
 
-    public EInfo(String name, String sex, int age, int phone, String email, Department department, Position position, Training training) {
-        this.name = name;
-        this.sex = sex;
-        this.age = age;
-        this.phone = phone;
-        this.email = email;
-        this.department = department;
+    public EInfo(Position position) {
         this.position = position;
-        this.training = training;
     }
 
     public int getId() {
@@ -101,12 +94,13 @@ public class EInfo implements Serializable{
         this.position = position;
     }
 
-    public Training getTraining() {
-        return training;
+
+    public Employee getEmployee() {
+        return employee;
     }
 
-    public void setTraining(Training training) {
-        this.training = training;
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
     }
 
     @Override
@@ -120,7 +114,7 @@ public class EInfo implements Serializable{
                 ", email='" + email + '\'' +
                 ", department=" + department +
                 ", position=" + position +
-                ", training=" + training +
+                ", employee=" + employee +
                 '}';
     }
 }
