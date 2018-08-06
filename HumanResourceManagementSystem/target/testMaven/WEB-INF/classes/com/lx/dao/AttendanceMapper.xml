@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.lx.dao.AttendanceMapper">
+    <resultMap id="attendanceMap" type="attendance">
+        <id property="id" column="A_ID"></id>
+        <result property="sWork" column="D_NAME"></result>
+        <result property="eWork" column="D_CREATION"></result>
+        <result property="sOvertime" column="D_CREATION"></result>
+        <result property="eOvertime" column="D_CREATION"></result>
+        <result property="period" column="D_CREATION"></result>
+        <result property="state" column="D_CREATION"></result>
+    </resultMap>
+    <insert id="addAT"></insert>
+    <update id="updateAT"></update>
 </mapper>

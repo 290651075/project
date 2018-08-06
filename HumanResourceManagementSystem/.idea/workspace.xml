@@ -2,118 +2,97 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e319ffe2-4562-4832-abbe-e0856a60b560" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/lx/service/impl/TrainingServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseDp.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseIs.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getPEm.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getTR.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listEIfoDetail.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/lookMail.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateTR.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/upResume.jsp" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/lx/service/impl/AttendanceServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/lx/service/impl/SalaryServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/EMInfo.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/eLogin.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getAllint.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/lookInR.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/9424c5cb-078e-45ed-8182-0c704579c176/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/9424c5cb-078e-45ed-8182-0c704579c176/_metadata_/metadata" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/9424c5cb-078e-45ed-8182-0c704579c176/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/9424c5cb-078e-45ed-8182-0c704579c176/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/controller/EInfoController.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/controller/EInfoController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/controller/EmployeeController.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/controller/EmployeeController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/controller/InterviewController.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/controller/InterviewController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/controller/PositionController.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/controller/PositionController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/controller/RecruitmentController.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/controller/RecruitmentController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/controller/SalaryController.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/controller/SalaryController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/controller/TrainingController.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/controller/TrainingController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/dao/AttendanceMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/dao/AttendanceMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/dao/EInfoMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/dao/EInfoMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/dao/EmployeeMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/dao/EmployeeMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/dao/InterviewMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/dao/InterviewMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/dao/PositionMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/dao/PositionMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/dao/TrainingMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/dao/TrainingMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/model/Department.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/model/Department.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/model/Attendance.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/model/Attendance.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/model/EInfo.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/model/EInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/model/Employee.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/model/Employee.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/model/Interview.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/model/Interview.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/model/Position.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/model/Position.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/model/Training.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/model/Training.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/service/EInfoService.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/service/EInfoService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/service/EmployeeService.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/service/EmployeeService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/service/InterviewService.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/service/InterviewService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/service/PositionService.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/service/PositionService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/service/TrainingService.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/service/TrainingService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/service/impl/EInfoServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/service/impl/EInfoServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/service/impl/EmployeeServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/service/impl/EmployeeServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/service/impl/InterviewServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/service/impl/InterviewServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/service/impl/PositionServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/lx/service/impl/PositionServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/controller/EInfoController.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/controller/EInfoController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/controller/EmployeeController.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/controller/EmployeeController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/controller/InterviewController.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/controller/InterviewController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/controller/PositionController.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/controller/PositionController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/controller/RecruitmentController.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/controller/RecruitmentController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/controller/SalaryController.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/controller/SalaryController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/controller/TrainingController.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/controller/TrainingController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/AttendanceMapper.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/AttendanceMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/EInfoMapper.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/EInfoMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/EmployeeMapper.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/EmployeeMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/InterviewMapper.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/InterviewMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/PositionMapper.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/PositionMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/TrainingMapper.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/TrainingMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/model/Department.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/model/Department.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/model/Attendance.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/model/Attendance.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/model/EInfo.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/model/EInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/model/Employee.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/model/Employee.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/model/Interview.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/model/Interview.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/model/Position.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/model/Position.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/model/Training.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/model/Training.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/EInfoService.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/EInfoService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/EmployeeService.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/EmployeeService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/InterviewService.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/InterviewService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/PositionService.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/PositionService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/TrainingService.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/TrainingService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/impl/EInfoServiceImpl.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/impl/EInfoServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/impl/EmployeeServiceImpl.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/impl/EmployeeServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/impl/InterviewServiceImpl.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/impl/InterviewServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/impl/PositionServiceImpl.class" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/service/impl/PositionServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/9424c5cb-078e-45ed-8182-0c704579c176.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/9424c5cb-078e-45ed-8182-0c704579c176.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/controller/EInfoController.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/controller/EInfoController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/controller/AttendanceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/controller/AttendanceController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/controller/EmployeeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/controller/EmployeeController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/controller/InterviewController.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/controller/InterviewController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/controller/PositionController.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/controller/PositionController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/controller/RecruitmentController.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/controller/RecruitmentController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/controller/SalaryController.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/controller/SalaryController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/controller/TrainingController.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/controller/TrainingController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/dao/AttendanceMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/dao/AttendanceMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/dao/AttendanceMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/lx/dao/AttendanceMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/dao/EInfoMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/dao/EInfoMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/dao/EInfoMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/lx/dao/EInfoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/dao/EmployeeMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/dao/EmployeeMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/dao/EmployeeMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/lx/dao/EmployeeMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/dao/InterviewMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/dao/InterviewMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/dao/InterviewMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/lx/dao/InterviewMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/dao/PositionMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/dao/PositionMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/dao/PositionMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/lx/dao/PositionMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/dao/RecruitmentMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/lx/dao/RecruitmentMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/dao/TrainingMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/dao/TrainingMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/dao/TrainingMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/lx/dao/TrainingMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/model/Department.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/model/Department.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/model/Attendance.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/model/Attendance.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/model/EInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/model/EInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/model/Employee.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/model/Employee.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/model/Interview.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/model/Interview.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/model/Position.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/model/Position.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/model/Training.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/model/Training.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/service/EInfoService.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/service/EInfoService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/service/EmployeeService.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/service/EmployeeService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/service/InterviewService.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/service/InterviewService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/service/PositionService.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/service/PositionService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/service/TrainingService.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/service/TrainingService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/service/impl/EInfoServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/service/impl/EInfoServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/service/impl/EmployeeServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/service/impl/EmployeeServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/service/impl/InterviewServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/service/impl/InterviewServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lx/service/impl/PositionServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/lx/service/impl/PositionServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addRec.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addRec.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addResume.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addResume.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getDE.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getDE.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getDp.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getDp.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getPo.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getPo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updatePo.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updatePo.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getTR.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getTR.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateResume.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateResume.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateTR.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateTR.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/dao/AttendanceMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/lx/dao/AttendanceMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/dao/EInfoMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/lx/dao/EInfoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/dao/EmployeeMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/lx/dao/EmployeeMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/dao/InterviewMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/lx/dao/InterviewMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/dao/PositionMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/lx/dao/PositionMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/dao/RecruitmentMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/lx/dao/RecruitmentMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/lx/dao/TrainingMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/lx/dao/TrainingMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/AttendanceMapper.xml" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/AttendanceMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/EInfoMapper.xml" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/EInfoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/EmployeeMapper.xml" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/EmployeeMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/InterviewMapper.xml" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/InterviewMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/PositionMapper.xml" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/PositionMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/RecruitmentMapper.xml" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/RecruitmentMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/TrainingMapper.xml" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/classes/com/lx/dao/TrainingMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/addRec.jsp" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/addRec.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/addResume.jsp" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/addResume.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/admin.jsp" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/admin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/getDE.jsp" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/getDE.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/getDp.jsp" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/getDp.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/getPo.jsp" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/getPo.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/success.jsp" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/success.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/updateResume.jsp" afterPath="$PROJECT_DIR$/target/testMaven/WEB-INF/pages/updateResume.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/testMaven/login.jsp" afterPath="$PROJECT_DIR$/target/testMaven/login.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/upResume.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addTR.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -173,19 +152,195 @@
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
       </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="T_TRAINING" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="LX" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="LX" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="A_ATTENDANCE" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="employee.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RewpunController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/RewpunController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResumeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/ResumeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="77" column="20" lean-forward="false" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#2740#2741#0" expanded="false" />
+                <element signature="e#2774#2775#0" expanded="false" />
+                <element signature="e#2845#2846#0" expanded="false" />
+                <element signature="e#2880#2881#0" expanded="false" />
+                <element signature="e#4099#4100#0" expanded="false" />
+                <element signature="e#4131#4132#0" expanded="false" />
+                <element signature="e#5555#5556#0" expanded="false" />
+                <element signature="e#5594#5595#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResAndRecController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/ResAndRecController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecruitmentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/RecruitmentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#2576#2577#0" expanded="false" />
+                <element signature="e#2607#2608#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DepartmentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/DepartmentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1543#1544#0" expanded="false" />
+                <element signature="e#1573#1574#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttendanceController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/AttendanceController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Attendance.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/model/Attendance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="109" column="18" lean-forward="false" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
+              <folding>
+                <element signature="e#1926#1927#0" expanded="true" />
+                <element signature="e#1954#1955#0" expanded="true" />
+                <element signature="e#1993#1994#0" expanded="true" />
+                <element signature="e#2027#2028#0" expanded="true" />
+                <element signature="e#2054#2055#0" expanded="true" />
+                <element signature="e#2080#2081#0" expanded="true" />
+                <element signature="e#2115#2116#0" expanded="true" />
+                <element signature="e#2145#2146#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttendanceService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/AttendanceService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttendanceServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/impl/AttendanceServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Mybatis Mapper" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -200,57 +355,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/DepartmentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/impl/DepartmentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addPo.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/controller/DepartmentController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/controller/RecruitmentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/RecruitmentMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getPEm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/EInfoMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/EInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/EInfoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/impl/EInfoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/controller/EInfoController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getDE.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listEIfoDetail.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getPo.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updatePo.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/PositionMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/PositionMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/PositionService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/impl/PositionServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/controller/PositionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/model/Employee.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/model/ResAndRec.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/model/EInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addTR.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseDE.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getDp.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseDp.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseIs.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/model/Training.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addResume.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addRec.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateResume.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/InterviewService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/impl/InterviewServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/model/Interview.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lx/model/Department.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lx/model/Position.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/lookMail.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/InterviewMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/InterviewMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/controller/InterviewController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getTR.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/TrainingMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lx/service/TrainingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lx/service/impl/TrainingServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/TrainingMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lx/controller/TrainingController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateResume.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateTR.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/model/Training.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getTR.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/controller/TrainingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/model/EInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/impl/SalaryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/controller/SalaryController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/lookInR.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/EInfoMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/EInfoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/impl/EInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/InterviewMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/EmployeeMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/EmployeeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/impl/EmployeeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/EMInfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/model/Interview.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/AttendanceMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/AttendanceMapper.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9424c5cb-078e-45ed-8182-0c704579c176/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getAllint.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/controller/InterviewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/InterviewService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/impl/InterviewServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/InterviewMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/EInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/eM.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/eLogin.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/TrainingMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/dao/EmployeeMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/controller/EmployeeController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/impl/AttendanceServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/model/Attendance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/controller/AttendanceController.java" />
       </list>
     </option>
   </component>
@@ -477,6 +632,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HumanResourceManagementSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HumanResourceManagementSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -488,7 +673,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/javaEE/龚老板/HR-SSM/HRSSM" />
+    <property name="last_opened_file_path" value="F:/javaEE/复习/HR-SSM/HRSSM" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.14740741" />
     <property name="project.structure.side.proportion" value="0.30430797" />
@@ -1071,7 +1256,10 @@
       <workItem from="1533173565926" duration="4967000" />
       <workItem from="1533186475637" duration="12007000" />
       <workItem from="1533219986936" duration="12968000" />
-      <workItem from="1533261287591" duration="48000" />
+      <workItem from="1533261287591" duration="3213000" />
+      <workItem from="1533265447699" duration="77000" />
+      <workItem from="1533266008110" duration="38886000" />
+      <workItem from="1533517447375" duration="1548000" />
     </task>
     <task id="LOCAL-00001" summary="已完成登陆注册，未完成简历投递">
       <created>1532561726975</created>
@@ -1129,11 +1317,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533113848417</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="dd">
+      <created>1533261393391</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1533261393391</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212021000" />
+    <option name="totallyTimeSpent" value="255697000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1145,7 +1340,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1160,27 +1356,63 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39932126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3970588" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12782806" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16289593" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.280543" sideWeight="0.49570817" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22058824" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26696834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2671674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24839056" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16289593" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9626697" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59049773" sideWeight="0.50429183" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.72171944" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21030043" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39932126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12782806" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16289593" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.280543" sideWeight="0.49570817" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3970588" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2746781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -1219,11 +1451,12 @@
     <MESSAGE value="游客的底层基本写完了 还在改错" />
     <MESSAGE value="修改了游客底层方法 主要是查询做分页 补充了部分controller里缺少的方法，jsp还没写完" />
     <MESSAGE value="睡醒，做个昨天的备份" />
-    <MESSAGE value="dd" />
     <MESSAGE value="游客已写完  管理员对招聘的增删改查已写完  接下来写员工部分" />
     <MESSAGE value="管理员对部门职位的增删改查底层方法写完  改查的jsp写完" />
     <MESSAGE value="完成了对职位部门的增删改查  在写对员工的增删改查" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了对职位部门的增删改查  在写对员工的增删改查" />
+    <MESSAGE value="dd" />
+    <MESSAGE value="在写下班打卡" />
+    <option name="LAST_COMMIT_MESSAGE" value="在写下班打卡" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1250,239 +1483,125 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getDE.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getDp.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="37" column="54" lean-forward="false" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addTR.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/ResAndRecMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/AttendanceMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/RewpunMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/DepartmentMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/model/EInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="240">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-764">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseDp.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/chooseIs.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/model/Training.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="104" column="1" lean-forward="true" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/RecruitmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/model/Resume.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addResume.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="834">
-          <caret line="31" column="62" lean-forward="false" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
+        <state relative-caret-position="-420">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addRec.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/RecruitmentMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="23" column="59" lean-forward="false" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/model/ResAndRec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/EmployeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/model/Tourist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-419">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/TouristMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/TouristController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listEIfoDetail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="473">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/model/Recruitment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
+        <state relative-caret-position="-240">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/model/Department.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/SalaryService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        <state relative-caret-position="150">
+          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/model/Position.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/DepartmentMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="90">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="7" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/InterviewMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/impl/InterviewServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/InterviewMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/AttendanceMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="19" column="69" lean-forward="false" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/InterviewService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/lookMail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="32" />
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/model/Interview.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="35" column="39" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminResAndRec.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="45" column="29" lean-forward="false" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+        <state relative-caret-position="480">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/ResumeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/TouristMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="143" column="26" lean-forward="true" selection-start-line="143" selection-start-column="26" selection-end-line="143" selection-end-column="26" />
+        <state relative-caret-position="150">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminFail.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/TouristMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/RecruitmentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/ResumeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9424c5cb-078e-45ed-8182-0c704579c176/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="51" lean-forward="false" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getTR.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1490,142 +1609,328 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/InterviewController.java">
+    <entry file="dbDummy://dbtable:/1cbec7bd/9424c5cb-078e-45ed-8182-0c704579c176/LX.I_INTERVIEW">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/lookMail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="96" column="10" lean-forward="false" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
+        <state relative-caret-position="502">
+          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/DepartmentController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/PositionMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listResumeDetail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1170">
+        <state relative-caret-position="-270">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listResume.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getAllint.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="20" column="87" lean-forward="false" selection-start-line="20" selection-start-column="87" selection-end-line="20" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/lookInR.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/InterviewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="143" column="65" lean-forward="false" selection-start-line="143" selection-start-column="65" selection-end-line="143" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/InterviewMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/InterviewService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="18" column="58" lean-forward="false" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/impl/InterviewServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="50" column="57" lean-forward="false" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/InterviewMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/EInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/EMInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        <state relative-caret-position="420">
+          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/ResumeMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/EInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1170">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="24" column="61" lean-forward="false" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/RecruitmentMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminLogin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="21" column="65" lean-forward="false" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+        <state relative-caret-position="361">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="22" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/TrainingService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        <state relative-caret-position="151">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/upResume.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/TrainingMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/EInfoMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="42" />
+        <state relative-caret-position="8">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/impl/TrainingServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/AttendanceMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="50" column="48" lean-forward="false" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+        <state relative-caret-position="330">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/EmployeeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/TrainingMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        <state relative-caret-position="480">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <marker date="1533517848944" expanded="true" signature="1156:1240" ph="INSERT INTO M_EIANDTR... " />
+            <marker date="1533517848944" expanded="true" signature="1290:1429" ph="UPDATE T_TRA... " />
+            <marker date="1533517848944" expanded="true" signature="1542:1566" ph="SELECT * FRO... T_TRAINING" />
+            <marker date="1533517848944" expanded="true" signature="1644:1729" ph="SELECT * FRO... rownum" />
+            <marker date="1533517848944" expanded="true" signature="1658:1697" ph="SELECT rownu... T_TRAINING" />
+            <marker date="1533517848944" expanded="true" signature="1804:1845" ph="SELECT * FRO... T_TRAINING" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/TrainingController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/dao/EmployeeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <marker date="1533517848964" expanded="true" signature="817:870" ph="UPDATE E_EMP... " />
+            <marker date="1533517848964" expanded="true" signature="947:1032" ph="SELECT * FRO... E_EMPLOYEE" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminFail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updatePo.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/EmployeeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="131">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateRec.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="382">
+          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateDp.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/eLogin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateResume.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/RewpunController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="29" column="106" lean-forward="false" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="106" />
+        <state relative-caret-position="240">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/getTR.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/ResumeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="283">
+          <caret line="77" column="20" lean-forward="false" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2740#2741#0" expanded="false" />
+            <element signature="e#2774#2775#0" expanded="false" />
+            <element signature="e#2845#2846#0" expanded="false" />
+            <element signature="e#2880#2881#0" expanded="false" />
+            <element signature="e#4099#4100#0" expanded="false" />
+            <element signature="e#4131#4132#0" expanded="false" />
+            <element signature="e#5555#5556#0" expanded="false" />
+            <element signature="e#5594#5595#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/ResAndRecController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/RecruitmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2576#2577#0" expanded="false" />
+            <element signature="e#2607#2608#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/DepartmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1543#1544#0" expanded="false" />
+            <element signature="e#1573#1574#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/AttendanceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/updateTR.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/impl/AttendanceServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="22" column="112" lean-forward="false" selection-start-line="22" selection-start-column="112" selection-end-line="22" selection-end-column="112" />
+        <state relative-caret-position="364">
+          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/employee.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/model/Attendance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="109" column="18" lean-forward="false" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
+          <folding>
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1954#1955#0" expanded="true" />
+            <element signature="e#1993#1994#0" expanded="true" />
+            <element signature="e#2027#2028#0" expanded="true" />
+            <element signature="e#2054#2055#0" expanded="true" />
+            <element signature="e#2080#2081#0" expanded="true" />
+            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2145#2146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/controller/AttendanceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

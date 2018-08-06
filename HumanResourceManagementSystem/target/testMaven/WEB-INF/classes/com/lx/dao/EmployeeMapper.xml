@@ -7,6 +7,15 @@
         <result property="pass" column="E_PASS"></result>
         <result property="state" column="E_STATE"></result>
     </resultMap>
+    <insert id="addEmployee">
+        <selectKey resultType="integer" order="BEFORE" keyProperty="id">
+            SELECT E_EMPLOYEE_SEQ.nextval FROM DUAL
+        </selectKey>
+        INSERT INTO E_EMPLOYEE (E_ID, E_NAME, E_PASS, E_STATE)  VALUES (id,#{name},#{pass},#{state})
+    </insert>
+    <update id="updateEmployeeN">
+        UPDATE E_EMPLOYEE SET E_NAME=#{name} WHERE E_ID=#{id}
+    </update>
     <select id="getEmployee" resultMap="employeeMap">
         SELECT * FROM E_EMPLOYEE WHERE E_NAME=#{name} AND E_PASS=#{pass} AND E_STATE=#{state}
     </select>

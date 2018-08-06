@@ -26,6 +26,7 @@
     <input type="submit" value="注册">
 </form>
 <a href="admin1">管理员登录</a>
+<a href="eM1">职员登陆</a>
 <%
     List<Recruitment> recruitments= (List<Recruitment>) session.getAttribute("recruitments");
     int totalPages= (int) session.getAttribute("totalPages");

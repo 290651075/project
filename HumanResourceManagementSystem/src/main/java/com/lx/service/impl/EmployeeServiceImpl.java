@@ -18,4 +18,14 @@ public class EmployeeServiceImpl implements EmployeeService {
     public Employee getEmployee(Employee employee) {
         return employeeMapper.getEmployee(employee);
     }
+
+    @Override
+    public void addEmployee(Employee employee) {
+        employeeMapper.addEmployee(employee);
+    }
+
+    @Override
+    public void updateEmployeeN(Employee employee) {
+        employeeMapper.updateEmployeeN(employee);
+    }
 }

@@ -19,5 +19,7 @@ public interface EInfoMapper {
     List<EInfo>  getEInfoByPAndPage(int pId,int begin, int end);
     //通过id查询员工
     EInfo getEInfoById(EInfo eInfo);
+    //添加员工信息
+    void addEInfo(EInfo eInfo);
 
 }

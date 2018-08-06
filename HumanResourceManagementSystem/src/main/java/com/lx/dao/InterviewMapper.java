@@ -15,4 +15,12 @@ public interface InterviewMapper {
     void updateInterview(Interview interview);
     //管理员邀请参加面试
     void addInterview(Interview interview);
+    //查出所有接受面试邀请的游客
+    List<Interview> getInterivew(Interview interview);
+    //修改面试结果
+    void updateInterviewR(Interview interview);
+    //游客查询面试结果
+    List<Interview> getInterviewRByT(Interview interview);
+    //通过id查询面试信息
+    Interview getInterviewById(Interview interview);
 }

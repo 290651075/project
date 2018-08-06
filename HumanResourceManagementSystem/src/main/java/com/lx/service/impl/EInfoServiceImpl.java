@@ -39,4 +39,9 @@ public class EInfoServiceImpl implements EInfoService {
     public EInfo getEInfoById(EInfo eInfo) {
         return eInfoMapper.getEInfoById(eInfo);
     }
+
+    @Override
+    public void addEInfo(EInfo eInfo) {
+        eInfoMapper.addEInfo(eInfo);
+    }
 }

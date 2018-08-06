@@ -1,7 +1,6 @@
 package com.lx.model;
 
 import org.springframework.format.annotation.DateTimeFormat;
-
 import java.io.Serializable;
 import java.util.Date;
 
@@ -109,6 +108,7 @@ public class Training implements Serializable {
     public void setIssueTime(Date issueTime) {
         this.issueTime = issueTime;
     }
+
 
     @Override
     public String toString() {

@@ -49,7 +49,7 @@
                 <input name="id" type="hidden" value="<%=trainings.get(i).getId()%>">
                 <input type="submit" value="修改">
             </form>
-            <form action="#">
+            <form action="revoke">
                 <input name="id" type="hidden" value="<%=trainings.get(i).getId()%>">
                 <input type="submit" value="撤回">
             </form>

@@ -84,6 +84,8 @@ public class TrainingController {
     @RequestMapping("/updateTR")
     public String updateTR(Training training,HttpSession session){
         Training training1=trainingService.getTRById(training);
+        System.out.println("@@@@@@@@");
+        System.out.println(training1);
         session.setAttribute("training",training1);
         return "updateTR";
     }
@@ -94,4 +96,9 @@ public class TrainingController {
         trainingService.updateTR(training);
         return "admin";
     }
+    //撤回
+  /*  @RequestMapping("/revokeTR")
+    public String revokeTR(Training training){
+        return "ff";
+    }*/
 }

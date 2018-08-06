@@ -1,6 +1,8 @@
 package com.lx.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Administrator on 2018/7/30.
@@ -17,6 +19,7 @@ public class EInfo implements Serializable{
     private String email;
     private Department department;//部门
     private Position position;//职位
+    private List<Attendance> attendances=new ArrayList<>();//考勤
     private Employee employee;//对应该信息的员工
 
     public EInfo() {
@@ -103,6 +106,14 @@ public class EInfo implements Serializable{
         this.employee = employee;
     }
 
+    public List<Attendance> getAttendances() {
+        return attendances;
+    }
+
+    public void setAttendances(List<Attendance> attendances) {
+        this.attendances = attendances;
+    }
+
     @Override
     public String toString() {
         return "EInfo{" +
@@ -114,6 +125,7 @@ public class EInfo implements Serializable{
                 ", email='" + email + '\'' +
                 ", department=" + department +
                 ", position=" + position +
+                ", attendances=" + attendances +
                 ", employee=" + employee +
                 '}';
     }

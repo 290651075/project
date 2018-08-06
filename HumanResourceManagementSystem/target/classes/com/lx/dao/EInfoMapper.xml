@@ -16,7 +16,14 @@
             <id property="id" column="P_ID"/>
             <result property="name" column="P_NAME"/>
         </association>
+        <association property="employee" javaType="employee">
+            <id property="id" column="E_ID"/>
+        </association>
     </resultMap>
+    <insert id="addEInfo">
+        INSERT INTO EI_EINFO (EI_ID, EI_NAME, EI_SEX, EI_AGE, EI_PHONE, EI_EMAIL, EI_DID, EI_PID, EI_EID) VALUES
+        (EI_EINFO_SEQ.nextval,#{name},#{sex},#{age},#{phone},#{email},#{department.id},#{position.id},#{employee.id})
+    </insert>
     <select id="getEInfoByP" resultMap="eInfoMap">
         SELECT *FROM EI_EINFO WHERE EI_PID=#{position.id}
     </select>

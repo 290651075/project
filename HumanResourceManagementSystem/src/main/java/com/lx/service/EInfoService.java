@@ -13,4 +13,6 @@ public interface EInfoService {
     List<EInfo> getEInfoByP(EInfo eInfo);
     List<EInfo>  getEInfoByPAndPage(int pId,int begin, int end);
     EInfo getEInfoById(EInfo eInfo);
+    void addEInfo(EInfo eInfo);
+
 }

@@ -32,6 +32,7 @@
             <li><a href="lookResume">查看简历</a></li>
             <li><a href="addResume1">添加简历</a></li>
             <li><a href="lookMail">查看信箱</a></li>
+            <li><a href="lookInR">查看面试结果</a></li>
         </ul>
     </div>
 </div>

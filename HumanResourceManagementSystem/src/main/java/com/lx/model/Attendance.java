@@ -15,21 +15,22 @@ public class Attendance implements Serializable {
     private String eWork;//下班打卡时间
     private String sOvertime;//开始加班时间
     private String eOvertime;//结束加班时间
-    private String period;//考勤时间段 （以一个月为一段）记录时期 列如 2018-06 即为6月份的考勤
+    private int month;//考勤时间段 （以一个月为一段）记录时期 列如 2018-06 即为6月份的考勤
+    private int day;//考勤时间段
     private int state;//上班状态 1 正常上班 2迟到（早退）3小时以内 3 旷工  4 加班
-    private Employee employee;//该条考勤记录对应的员工
-
+    private EInfo eInfo;//该条考勤记录对应的员工
     public Attendance() {
     }
 
-    public Attendance(String sWork, String eWork, String sOvertime, String eOvertime, String period, int state, Employee employee) {
+    public Attendance(String sWork, String eWork, String sOvertime, String eOvertime, int month, int day, int state, EInfo eInfo) {
         this.sWork = sWork;
         this.eWork = eWork;
         this.sOvertime = sOvertime;
         this.eOvertime = eOvertime;
-        this.period = period;
+        this.month = month;
+        this.day = day;
         this.state = state;
-        this.employee = employee;
+        this.eInfo = eInfo;
     }
 
     public int getId() {
@@ -72,13 +73,6 @@ public class Attendance implements Serializable {
         this.eOvertime = eOvertime;
     }
 
-    public String getPeriod() {
-        return period;
-    }
-
-    public void setPeriod(String period) {
-        this.period = period;
-    }
 
     public int getState() {
         return state;
@@ -88,12 +82,28 @@ public class Attendance implements Serializable {
         this.state = state;
     }
 
-    public Employee getEmployee() {
-        return employee;
+    public EInfo geteInfo() {
+        return eInfo;
     }
 
-    public void setEmployee(Employee employee) {
-        this.employee = employee;
+    public void seteInfo(EInfo eInfo) {
+        this.eInfo = eInfo;
+    }
+
+    public int getMonth() {
+        return month;
+    }
+
+    public void setMonth(int month) {
+        this.month = month;
+    }
+
+    public int getDay() {
+        return day;
+    }
+
+    public void setDay(int day) {
+        this.day = day;
     }
 
     @Override
@@ -104,9 +114,10 @@ public class Attendance implements Serializable {
                 ", eWork='" + eWork + '\'' +
                 ", sOvertime='" + sOvertime + '\'' +
                 ", eOvertime='" + eOvertime + '\'' +
-                ", period='" + period + '\'' +
+                ", month=" + month +
+                ", day=" + day +
                 ", state=" + state +
-                ", employee=" + employee +
+                ", eInfo=" + eInfo +
                 '}';
     }
 }

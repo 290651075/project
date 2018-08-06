@@ -11,15 +11,50 @@
         <association property="resume" javaType="resume">
             <id property="id" column="R_ID"/>
         </association>
+        <association property="tourist" javaType="tourist">
+            <id property="id" column="T_ID"/>
+        </association>
     </resultMap>
     <insert id="addInterview">
         INSERT INTO I_INTERVIEW (I_ID, I_RESID, I_INVITESTATE, I_RESULTSTATE, I_RECID,I_TID) VALUES (I_INTERVIEW_SEQ.nextval,
         #{resume.id},#{inviteState},#{resultState},#{recruitment.id},#{tourist.id})
     </insert>
     <update id="updateInterview">
-        UPDATE I_INTERVIEW SET I_INVITESTATE=#{state} WHERE I_ID=#{id}
+        UPDATE I_INTERVIEW SET I_INVITESTATE=#{inviteState} WHERE I_ID=#{id}
+    </update>
+    <update id="updateInterviewR">
+        UPDATE I_INTERVIEW SET I_RESULTSTATE=#{resultState} WHERE I_ID=#{id}
     </update>
     <select id="getInterviewByT" resultMap="interviewtMap">
-        SELECT * FROM WHERE  I_TID=#{tourist.id} AND I_INVITESTATE=#{inviteState} AND I_RESULTSTATE=#{resultState}
+        SELECT * FROM I_INTERVIEW,T_TOURIST,R_RECRUITMENT,R_RESUME
+         WHERE I_INTERVIEW.I_RECID=R_RECRUITMENT.R_ID
+         AND I_INTERVIEW.I_RESID=R_RESUME.R_ID
+         AND I_INTERVIEW.I_TID=T_TOURIST.T_ID
+         AND I_INVITESTATE=#{inviteState}
+         AND I_RESULTSTATE=#{resultState}
+         AND I_TID=#{tourist.id}
+    </select>
+    <select id="getInterivew" resultMap="interviewtMap">
+        SELECT * FROM I_INTERVIEW,T_TOURIST,R_RECRUITMENT,R_RESUME
+         WHERE I_INTERVIEW.I_RECID=R_RECRUITMENT.R_ID
+         AND I_INTERVIEW.I_RESID=R_RESUME.R_ID
+         AND I_INTERVIEW.I_TID=T_TOURIST.T_ID
+         AND I_INVITESTATE=#{inviteState}
+         AND I_RESULTSTATE=#{resultState}
+    </select>
+    <select id="getInterviewRByT" resultMap="interviewtMap">
+         SELECT * FROM I_INTERVIEW ,T_TOURIST,R_RECRUITMENT,R_RESUME
+         WHERE I_INTERVIEW.I_RECID=R_RECRUITMENT.R_ID
+         AND I_INTERVIEW.I_RESID=R_RESUME.R_ID
+         AND I_INTERVIEW.I_TID=T_TOURIST.T_ID
+         AND I_TID=#{tourist.id}
+         AND I_RESULTSTATE=#{resultState}
+    </select>
+    <select id="getInterviewById" resultMap="interviewtMap">
+        SELECT * FROM I_INTERVIEW ,T_TOURIST,R_RECRUITMENT,R_RESUME
+         WHERE I_INTERVIEW.I_RECID=R_RECRUITMENT.R_ID
+         AND I_INTERVIEW.I_RESID=R_RESUME.R_ID
+         AND I_INTERVIEW.I_TID=T_TOURIST.T_ID
+         AND  I_ID=#{id}
     </select>
 </mapper>

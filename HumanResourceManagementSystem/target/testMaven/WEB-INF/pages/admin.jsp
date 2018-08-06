@@ -31,5 +31,11 @@
 <form action="getTR">
     <input type="submit" value="管理培训">
 </form>
+<form action="getAT">
+    <input type="submit" value="查看考勤">
+</form>
+<form action="getREW">
+    <input type="submit" value="查看奖罚">
+</form>
 </body>
 </html>

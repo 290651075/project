@@ -7,4 +7,6 @@ import com.lx.model.Employee;
  */
 public interface EmployeeService {
     Employee getEmployee(Employee employee);
+    void addEmployee(Employee employee);
+    void updateEmployeeN(Employee employee);
 }

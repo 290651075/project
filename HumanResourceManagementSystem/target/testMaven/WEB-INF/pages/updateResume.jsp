@@ -18,7 +18,7 @@
 </head>
 <body>
 <%
-    Resume resume= (Resume) session.getAttribute("resume");
+    Resume resume= (Resume) session.getAttribute("resume1");
 %>
 <form action="/updateResumeDetail" method="post">
     姓名：    <input id="name" type="text" name="name" value="<%=resume.getName()%>"/><br/>

@@ -11,14 +11,19 @@ import java.io.Serializable;
  */
 public class Interview implements Serializable{
     private int id;
-    private Resume resume;//邀请对应的简历
-    private Recruitment recruitment;//与本次邀请对应的职位(招聘信息中）
-    private Tourist tourist;
     //邀请面试状态 1已邀请参加面试游客未确认是否参加（即收件箱信息） 2未邀请参加面试  3已邀请并且游客确认参加  4已邀请游客拒绝参加
     private int inviteState;
     private int resultState;//面试结果状态  1 面试通过可以录用  2 面试未通过 0还没有结果
+    private Resume resume;//邀请对应的简历
+    private Recruitment recruitment;//与本次邀请对应的职位(招聘信息中）
+    private Tourist tourist;
 
     public Interview() {
+    }
+
+    public Interview(int inviteState, int resultState) {
+        this.inviteState = inviteState;
+        this.resultState = resultState;
     }
 
     public Interview(int id) {

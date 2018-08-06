@@ -23,11 +23,31 @@ public class InterviewServiceImpl implements InterviewService{
 
     @Override
     public void updateInterview(Interview interview) {
-        updateInterview(interview);
+        interviewMapper.updateInterview(interview);
     }
 
     @Override
     public void addInterview(Interview interview) {
         interviewMapper.addInterview(interview);
+    }
+
+    @Override
+    public List<Interview> getInterivew(Interview interview) {
+        return interviewMapper.getInterivew(interview);
+    }
+
+    @Override
+    public void updateInterviewR(Interview interview) {
+        interviewMapper.updateInterviewR(interview);
+    }
+
+    @Override
+    public Interview getInterviewById(Interview interview) {
+        return interviewMapper.getInterviewById(interview);
+    }
+
+    @Override
+    public List<Interview> getInterviewRByT(Interview interview) {
+        return interviewMapper.getInterviewRByT(interview);
     }
 }

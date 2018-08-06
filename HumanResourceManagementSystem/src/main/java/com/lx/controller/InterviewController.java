@@ -71,11 +71,15 @@ public class InterviewController {
     //游客查看信箱
     @RequestMapping("/lookMail")
     public String lookMail(HttpSession session){
+        System.out.println("22222222222");
         Tourist tourist= (Tourist) session.getAttribute("tourist");
         Interview interview=new Interview(tourist);
         interview.setInviteState(1);
         interview.setResultState(0);
+        System.out.println(interview);
         List<Interview> interviews=interviewService.getInterviewByT(interview);
+        System.out.println(interviews.get(0));
+        System.out.println(interviews.size());
         for (int i=0;i<interviews.size();i++){
             Recruitment recruitment=recruitmentService.getRecruitmentById(new Recruitment(interviews.get(i).getRecruitment().getId()));
             Department department=departmentService.getDepartmentById(new Department(recruitment.getDepartment().getId()));
@@ -83,6 +87,8 @@ public class InterviewController {
             recruitment.setDepartment(department);
             recruitment.setPosition(position);
             interviews.get(i).setRecruitment(recruitment);
+            System.out.println("*******");
+            System.out.println(interviews.get(i));
         }
         session.setAttribute("interviews",interviews);
         return "lookMail";
@@ -91,6 +97,7 @@ public class InterviewController {
     @RequestMapping("/accept")
     public String accept(Interview interview){
         interview.setInviteState(3);
+        System.out.println(interview);
         interviewService.updateInterview(interview);
         return "lookMail";
     }
@@ -100,5 +107,50 @@ public class InterviewController {
         interview.setInviteState(4);
         interviewService.updateInterview(interview);
         return "lookMail";
+    }
+    //进行面试
+    @RequestMapping("/getAllint")
+    public String getAllint(HttpSession session){
+        int inviteState=3;
+        int resultState=0;
+        Interview interview=new Interview(inviteState,resultState);
+        List<Interview> interviews=interviewService.getInterivew(interview);
+        for (int i=0;i<interviews.size();i++){
+            Resume resume=resumeService.getResumeById(new Resume(interviews.get(i).getResume().getId()));
+            interviews.get(i).setResume(resume);
+        }
+        session.setAttribute("interviewsAD",interviews);
+        return "getAllint";
+    }
+    //录用
+    @RequestMapping("/hire")
+    public String hire(Interview interview){
+        interview.setResultState(1);
+        interviewService.updateInterviewR(interview);
+        return "admin";
+    }
+    @RequestMapping("/noHire")
+    public String noHire(Interview interview){
+        interview.setResultState(2);
+        interviewService.updateInterviewR(interview);
+        return "admin";
+    }
+    //游客查看面试结果
+    @RequestMapping("/lookInR")
+    public String lookInR(HttpSession session){
+        Tourist tourist= (Tourist) session.getAttribute("tourist");
+        Interview interview=new Interview(tourist);
+        interview.setResultState(1);
+        List<Interview> interviews=interviewService.getInterviewRByT(interview);
+        for (int i=0;i<interviews.size();i++){
+            Recruitment recruitment=recruitmentService.getRecruitmentById(new Recruitment(interviews.get(i).getRecruitment().getId()));
+            Department department=departmentService.getDepartmentById(new Department(recruitment.getDepartment().getId()));
+            Position position=positionService.getPositionById(new Position(recruitment.getPosition().getId()));
+            recruitment.setDepartment(department);
+            recruitment.setPosition(position);
+            interviews.get(i).setRecruitment(recruitment);
+        }
+        session.setAttribute("interviewsR",interviews);
+        return "lookInR";
     }
 }
